@@ -19,7 +19,7 @@ const LandingPage: React.FC = () => {
     dispatch(Adder(1));
   };
   return (
-    <Grid container direction="row" mt={3} bgcolor="#6DBAC6">
+    <Grid container direction="row" mt={3} bgcolor="#262626">
       <Grid
         item
         xs={12}
@@ -56,12 +56,13 @@ const LandingPage: React.FC = () => {
             </Typography>
           </Box>
           <Box>
-            <Typography gutterBottom variant="overline">
+            <Typography color="inherit" gutterBottom variant="overline">
               {`${status} Users Joined Us...`}
             </Typography>
           </Box>
           <Box mt={3}>
             <Button
+              size="large"
               variant="contained"
               endIcon={<KeyboardArrowRightRoundedIcon />}
               onClick={handleClick}
