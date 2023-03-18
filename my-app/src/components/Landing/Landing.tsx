@@ -9,6 +9,7 @@ import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRigh
 import { useAppDispatch, useAppSelector } from "../../hooks/hooksRedux";
 import { Adder } from "../../redux/portfolio/actions";
 import Button from "@mui/material/Button";
+import { ProfileIMG } from "../../data/data";
 
 const LandingPage: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -86,12 +87,9 @@ const LandingPage: React.FC = () => {
           alignItems="center"
           justifyContent="center"
           sx={{ py: { sx: 0, md: 2 } }}
+          borderRadius="50%"
         >
-          <img
-            src="https://cdn.dribbble.com/users/638428/screenshots/3641004/code2.gif"
-            alt="gif"
-            width="100%"
-          />
+          <img src={ProfileIMG} alt="gif" width="50%" />
         </Box>
       </Grid>
     </Grid>
