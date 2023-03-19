@@ -10,6 +10,7 @@ import { useAppDispatch, useAppSelector } from "../../hooks/hooksRedux";
 import { Adder } from "../../redux/portfolio/actions";
 import Button from "@mui/material/Button";
 import { ProfileIMG } from "../../data/data";
+import Avatar from "@mui/material/Avatar";
 
 const LandingPage: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -19,7 +20,7 @@ const LandingPage: React.FC = () => {
     dispatch(Adder(1));
   };
   return (
-    <Grid container direction="row" mt={3} bgcolor="#262626">
+    <Grid container direction="row" mt={3} bgcolor="whitesmoke">
       <Grid
         item
         xs={12}
@@ -52,18 +53,15 @@ const LandingPage: React.FC = () => {
                 textDecoration: "none",
               }}
             >
-              Devs Learning
+              Francisco Rivero
             </Typography>
           </Box>
-          <Box>
-            <Typography color="inherit" gutterBottom variant="overline">
-              {`${status} Users Joined Us...`}
-            </Typography>
-          </Box>
+
           <Box mt={3}>
             <Button
               size="large"
               variant="contained"
+              color="primary"
               endIcon={<KeyboardArrowRightRoundedIcon />}
               onClick={handleClick}
             >
@@ -82,15 +80,21 @@ const LandingPage: React.FC = () => {
         justifyContent="center"
       >
         <Box
-          width="100%"
+          width="40%"
           display="flex"
           flexDirection="column"
           alignItems="center"
           justifyContent="center"
-          sx={{ py: { sx: 0, md: 2 } }}
           borderRadius="50%"
+          border={4}
+          borderColor="white"
+          boxShadow={4}
         >
-          <img src={ProfileIMG} alt="gif" width="50%" />
+          <Avatar
+            alt="FR"
+            src={ProfileIMG}
+            sx={{ width: "100%", height: "100%" }}
+          />
         </Box>
       </Grid>
     </Grid>

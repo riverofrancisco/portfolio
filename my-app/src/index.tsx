@@ -17,6 +17,9 @@ let theme = createTheme({
     secondary: {
       main: "#f8bb05",
     },
+    info: {
+      main: "#9c27b0",
+    },
   },
 });
 
