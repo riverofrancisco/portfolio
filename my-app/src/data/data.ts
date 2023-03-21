@@ -91,7 +91,7 @@ export const techSkills: Skill[] = [{
 
   export const myBackground : Background[] = [
     {    institution: "Henry Bootcamp",
-    image: "logo Henry",
+    image: "https://www.soyhenry.com/_next/image?url=https%3A%2F%2Fassets.soyhenry.com%2Fhenry-landing%2Fassets%2FHenry%2Flogo-white.png&w=128&q=75",
         degree: "FullStack Developer", 
         timePeriod: "ago 2022 - mar 2023",
         description: [
@@ -110,7 +110,7 @@ export const techSkills: Skill[] = [{
             "Trabajo en equipo"
           ]},
           {    institution: "Universidad de Buenos Aires",
-          image: "logo UBA",
+          image: "https://exactas.uba.ar/wp-content/uploads/2022/08/logo-2022.png",
           degree: "Licenciatura en Ciencias Físicas", 
           timePeriod: "jul 2018 - ago 2022",
           description: "1° año aprobado, promedio 6.86/10"},  

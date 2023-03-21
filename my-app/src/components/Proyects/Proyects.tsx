@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import { Proyect, Proyects } from "../../data/data";
 import Typography from "@mui/material/Typography";
 
-const ProyectsLists = () => {
+const ProyectsList = () => {
   return (
     <Grid container spacing={10} mt={2} borderTop={3} borderBottom={3}>
       <Grid
@@ -41,4 +41,4 @@ const ProyectsLists = () => {
   );
 };
 
-export default ProyectsLists;
+export default ProyectsList;

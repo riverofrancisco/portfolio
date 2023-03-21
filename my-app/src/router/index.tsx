@@ -1,9 +1,10 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
+import BackgroundList from "../components/BackGround/BackGround";
 import LandingPage from "../components/Landing/Landing";
 import NavBar from "../components/Nav/Navbar";
-import ProyectsLists from "../components/Proyects/Proyects";
+import ProyectsList from "../components/Proyects/Proyects";
 import SoftSkills from "../components/Skills/soft";
 import TechSkills from "../components/Skills/tech";
 
@@ -14,7 +15,8 @@ export const AppRouter = () => {
       <LandingPage />
       <TechSkills />
       <SoftSkills />
-      <ProyectsLists />
+      <ProyectsList />
+      <BackgroundList />
       <Routes></Routes>
     </div>
   );

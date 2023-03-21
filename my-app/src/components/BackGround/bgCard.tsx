@@ -7,22 +7,36 @@ interface Props {
   background: Background;
 }
 
-const bgCard = ({ background }: Props) => {
+const BGCard = ({ background }: Props) => {
   return (
     <Box
       display="flex"
+      width="40%"
       flexDirection="column"
       alignItems="center"
       border={2}
-      borderRadius="30%"
+      borderRadius={2}
       margin={1}
-      p={3}
+      p={1}
       boxShadow={5}
       bgcolor="lightgrey"
     >
-      <Typography variant="h5">{background.institution}</Typography>
+      <Box width="100%" display="flex" justifyContent="space-around">
+        <img
+          width="110px"
+          height="35px"
+          src={background.image}
+          alt={background.institution}
+        />
+        <Typography variant="h5">{background.institution}</Typography>
+      </Box>
+
+      <Typography variant="h6">{background.degree}</Typography>
+      <Typography variant="overline">{background.timePeriod}</Typography>
+
+      <Typography variant="body1">{background.description}</Typography>
     </Box>
   );
 };
 
-export default bgCard;
+export default BGCard;
