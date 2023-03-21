@@ -11,6 +11,7 @@ import { Adder } from "../../redux/portfolio/actions";
 import Button from "@mui/material/Button";
 import { ProfileIMG } from "../../data/data";
 import Avatar from "@mui/material/Avatar";
+import SocialMediaSpeedDial from "../Animations/SocialMedia";
 
 const LandingPage: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -20,11 +21,17 @@ const LandingPage: React.FC = () => {
     dispatch(Adder(1));
   };
   return (
-    <Grid container direction="row" mt={3} bgcolor="whitesmoke">
+    <Grid
+      container
+      direction="row"
+      style={{ height: "100vh", width: "100vw" }}
+      bgcolor="whitesmoke"
+    >
       <Grid
         item
         xs={12}
         md={6}
+        border={1}
         display="flex"
         alignItems="center"
         justifyContent="center"
@@ -55,19 +62,11 @@ const LandingPage: React.FC = () => {
             >
               Francisco Rivero
             </Typography>
-            <Typography>FullStack Developer</Typography>
+            <Typography variant="h6">FullStack Developer</Typography>
           </Box>
 
-          <Box mt={3}>
-            <Button
-              size="large"
-              variant="contained"
-              color="primary"
-              endIcon={<KeyboardArrowRightRoundedIcon />}
-              onClick={handleClick}
-            >
-              Add 1
-            </Button>
+          <Box alignSelf="start">
+            <SocialMediaSpeedDial />
           </Box>
         </Box>
       </Grid>
@@ -76,6 +75,8 @@ const LandingPage: React.FC = () => {
         item
         xs={12}
         md={6}
+        sx={{ py: { sm: 20 } }}
+        border={1}
         display="flex"
         alignItems="center"
         justifyContent="center"

@@ -7,7 +7,13 @@ import Typography from "@mui/material/Typography";
 
 const SoftSkills = () => {
   return (
-    <Grid container spacing={10} mt={2} borderTop={3} borderBottom={3}>
+    <Grid
+      container
+      style={{ height: "100vh", width: "100vw" }}
+      mt={2}
+      borderTop={3}
+      borderBottom={3}
+    >
       <Grid item xs={6} display="flex" border={1}>
         <Box width="100%" display="flex" flexWrap="wrap">
           {softSkills.map((sk: Skill) => {

@@ -7,7 +7,12 @@ import Typography from "@mui/material/Typography";
 
 const TechSkills = () => {
   return (
-    <Grid container spacing={10} mt={2} borderTop={3} borderBottom={3}>
+    <Grid
+      container
+      style={{ height: "100vh", width: "100vw" }}
+      borderTop={3}
+      borderBottom={3}
+    >
       <Grid
         item
         xs={6}

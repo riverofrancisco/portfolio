@@ -8,7 +8,13 @@ import BGCard from "./bgCard";
 
 const BackgroundList = () => {
   return (
-    <Grid container spacing={10} mt={2} borderTop={3} borderBottom={3}>
+    <Grid
+      container
+      style={{ height: "100vh", width: "100vw" }}
+      mt={2}
+      borderTop={3}
+      borderBottom={3}
+    >
       <Grid
         item
         xs={12}
@@ -17,7 +23,7 @@ const BackgroundList = () => {
         alignItems="center"
         border={1}
       >
-        <Typography variant="h1">Proyects</Typography>
+        <Typography variant="h1">Background</Typography>
       </Grid>
       <Grid
         item

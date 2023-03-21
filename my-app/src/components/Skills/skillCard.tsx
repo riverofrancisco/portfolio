@@ -19,9 +19,10 @@ const Card = ({ skill }: Props) => {
       p={3}
       boxShadow={5}
       bgcolor="lightgrey"
+      maxWidth="30%"
     >
       <Typography variant="h5">{skill.name}</Typography>
-      <img src={skill.image} alt={skill.name} />
+      <img width="100%" src={skill.image} alt={skill.name} />
     </Box>
   );
 };
