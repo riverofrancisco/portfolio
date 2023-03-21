@@ -83,6 +83,7 @@ export const techSkills: Skill[] = [{
 
   export interface Background {
     institution: string,
+    image: string
     degree: string, 
     timePeriod: string,
     description: any
@@ -90,6 +91,7 @@ export const techSkills: Skill[] = [{
 
   export const myBackground : Background[] = [
     {    institution: "Henry Bootcamp",
+    image: "logo Henry",
         degree: "FullStack Developer", 
         timePeriod: "ago 2022 - mar 2023",
         description: [
@@ -108,7 +110,27 @@ export const techSkills: Skill[] = [{
             "Trabajo en equipo"
           ]},
           {    institution: "Universidad de Buenos Aires",
+          image: "logo UBA",
           degree: "Licenciatura en Ciencias Físicas", 
           timePeriod: "jul 2018 - ago 2022",
           description: "1° año aprobado, promedio 6.86/10"},  
+  ]
+
+  export interface Proyect {
+    name: string,
+    period: string,
+    image: string,
+    link: string,
+    description: string
+  }
+
+  export const Proyects : Proyect[] = [
+    {
+      name: "Devs Learning",
+      period: "ene. 2023 - mar. 2023",
+      image: "https://youtu.be/ZU7n8LiP5OE",
+      link: "https://devs-learning-5hal.vercel.app/",
+      description: "Junto con 7 compañeros, aplicando la metodología ágil de SCRUM, desarrollamos la plataforma responsive de venta de cursos online Devs Learning. Para el mismo utilizamos tecnologías como Typescript, React, Redux Toolkits, Material UI, PostgreSQL, Sequelize, Node, Express, Firebase, Checkbox Mercadopago, entre otras.",
+    }
+  
   ]

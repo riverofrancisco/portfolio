@@ -38,7 +38,7 @@ const LandingPage: React.FC = () => {
           justifyContent="center"
           sx={{ py: { sx: 0, md: 20 } }}
         >
-          <Box display="flex">
+          <Box display="flex" flexDirection="column" alignItems="center">
             <Typography
               variant="h4"
               noWrap
@@ -55,6 +55,7 @@ const LandingPage: React.FC = () => {
             >
               Francisco Rivero
             </Typography>
+            <Typography>FullStack Developer</Typography>
           </Box>
 
           <Box mt={3}>
