@@ -25,11 +25,9 @@ export default function NavBar() {
   function scrollToTextField(id: string) {
     const element = document.getElementById(id);
     if (element) element.scrollIntoView({ behavior: "smooth" });
+    setSection(id);
   }
 
-  const handleSection = (item: string) => {
-    setSection(item);
-  };
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
@@ -64,6 +62,7 @@ export default function NavBar() {
               <Box
                 key={item}
                 borderRadius={1}
+                bgcolor={section === item ? "#c2dcf5" : "primary"}
                 sx={{
                   "&:hover": {
                     bgcolor: "#c2dcf5",
