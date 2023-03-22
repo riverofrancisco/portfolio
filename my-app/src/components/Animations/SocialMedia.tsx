@@ -30,21 +30,19 @@ const actions = [
 export default function SocialMediaSpeedDial() {
   return (
     <Box sx={{ transform: "translateZ(0px)", flexGrow: 1 }}>
-      <Box sx={{ position: "relative", mt: 3, height: 320 }}>
-        <StyledSpeedDial
-          ariaLabel="SpeedDial playground example"
-          icon={<SendIcon />}
-          direction="right"
-        >
-          {actions.map((action) => (
-            <SpeedDialAction
-              key={action.name}
-              icon={action.icon}
-              tooltipTitle={action.name}
-            />
-          ))}
-        </StyledSpeedDial>
-      </Box>
+      <StyledSpeedDial
+        ariaLabel="SpeedDial playground example"
+        icon={<SendIcon />}
+        direction="right"
+      >
+        {actions.map((action) => (
+          <SpeedDialAction
+            key={action.name}
+            icon={action.icon}
+            tooltipTitle={action.name}
+          />
+        ))}
+      </StyledSpeedDial>
     </Box>
   );
 }

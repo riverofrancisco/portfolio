@@ -39,9 +39,7 @@ const LandingPage: React.FC = () => {
       >
         <Box
           height={"55vh"}
-          width="100%"
           display="flex"
-          flexDirection="column"
           alignItems="center"
           justifyContent="center"
           sx={{ py: { sx: 0, md: 20 } }}
@@ -64,10 +62,10 @@ const LandingPage: React.FC = () => {
               Francisco Rivero
             </Typography>
             <Typography variant="h6">FullStack Developer</Typography>
-          </Box>
 
-          <Box alignSelf="start">
-            <SocialMediaSpeedDial />
+            <Box alignSelf="start" ml={4}>
+              <SocialMediaSpeedDial />
+            </Box>
           </Box>
         </Box>
       </Grid>
