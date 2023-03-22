@@ -18,8 +18,13 @@ const BGCard = ({ background }: Props) => {
       borderRadius={2}
       margin={1}
       p={1}
-      boxShadow={5}
+      boxShadow={2}
       bgcolor="lightgrey"
+      sx={{
+        "&:hover": {
+          boxShadow: 6,
+        },
+      }}
     >
       <Box width="100%" display="flex" justifyContent="space-around">
         <img

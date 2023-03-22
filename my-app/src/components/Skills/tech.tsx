@@ -19,12 +19,18 @@ const TechSkills = () => {
         display="flex"
         flexDirection="column"
         alignItems="center"
+        justifyContent="center" 
         border={1}
       >
         <Typography variant="h1">TechSkills</Typography>
       </Grid>
       <Grid item xs={6} display="flex" border={1}>
-        <Box width="100%" display="flex" flexWrap="wrap">
+        <Box
+          width="100%"
+          display="flex"
+          flexWrap="wrap"
+          justifyContent="center"
+        >
           {techSkills.map((sk: Skill) => {
             return <Card key={sk.name} skill={sk} />;
           })}

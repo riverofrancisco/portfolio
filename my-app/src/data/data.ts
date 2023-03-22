@@ -7,23 +7,23 @@ export interface Skill {
 
 export const techSkills: Skill[] = [{
       name: "Javascript",
-      image: "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_js_icon_130510.png"
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png"
     },
     {
       name: "Typescript",
-      image: "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_typescript_official_icon_130107.png"
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"
     },
     {
       name: "React",
-      image: "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_reactjs_icon_130205.png"
+      image: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png"
     },
     {
       name: "Redux",
-      image: "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_redux_icon_130218.png"
+      image: "https://seeklogo.com/images/R/redux-logo-9CA6836C12-seeklogo.com.png"
     },
     {
       name: "Material UI",
-      image: "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_materialui_icon_130071.png"
+      image: "https://seeklogo.com/images/M/material-ui-logo-5BDCB9BA8F-seeklogo.com.png"
     },
     {
       name: "CSS",
@@ -39,11 +39,11 @@ export const techSkills: Skill[] = [{
     },
     {
       name: "Express",
-      image: "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_express_icon_130510.png"
+      image: "https://wsofter.ru/wp-content/uploads/2017/12/node-express.png"
     },
     {
       name: "PostgreSQL",
-      image: "https://cdn.icon-icons.com/icons2/1381/PNG/512/postgresql_93897.png"
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"
     }
   ];
   

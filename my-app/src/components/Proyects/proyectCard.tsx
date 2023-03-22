@@ -18,8 +18,13 @@ const ProyectCard = ({ proyect }: Props) => {
       borderRadius={2}
       margin={1}
       p={3}
-      boxShadow={5}
+      boxShadow={2}
       bgcolor="lightgrey"
+      sx={{
+        "&:hover": {
+          boxShadow: 6,
+        },
+      }}
     >
       <Typography variant="h4">{proyect.name}</Typography>
       <Typography variant="overline">{proyect.period}</Typography>
