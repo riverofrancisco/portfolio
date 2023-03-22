@@ -14,12 +14,13 @@ const BackgroundList = () => {
       mt={2}
       borderTop={3}
       borderBottom={3}
+      id="Background"
     >
       <Grid
         item
         xs={12}
         display="flex"
-        flexDirection="column"
+        justifyContent="center"
         alignItems="center"
         border={1}
       >

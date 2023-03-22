@@ -13,12 +13,13 @@ const ProyectsList = () => {
       mt={2}
       borderTop={3}
       borderBottom={3}
+      id="Proyects"
     >
       <Grid
         item
         xs={12}
         display="flex"
-        flexDirection="column"
+        justifyContent="center"
         alignItems="center"
         border={1}
       >

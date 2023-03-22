@@ -12,6 +12,7 @@ const TechSkills = () => {
       style={{ height: "100vh", width: "100vw" }}
       borderTop={3}
       borderBottom={3}
+      id="Skills"
     >
       <Grid
         item
@@ -19,7 +20,7 @@ const TechSkills = () => {
         display="flex"
         flexDirection="column"
         alignItems="center"
-        justifyContent="center" 
+        justifyContent="center"
         border={1}
       >
         <Typography variant="h1">TechSkills</Typography>

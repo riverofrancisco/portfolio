@@ -26,6 +26,7 @@ const LandingPage: React.FC = () => {
       direction="row"
       style={{ height: "100vh", width: "100vw" }}
       bgcolor="whitesmoke"
+      id="Home"
     >
       <Grid
         item

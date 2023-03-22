@@ -14,12 +14,22 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Searcher from "./Searcher";
+import { Link } from "@mui/material";
 
-const navItems = ["Home", "About", "Contact"];
+const navItems = ["Home", "Skills", "Proyects", "Background", "Contact"];
 
 export default function NavBar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [section, setSection] = React.useState("");
 
+  function scrollToTextField(id: string) {
+    const element = document.getElementById(id);
+    if (element) element.scrollIntoView({ behavior: "smooth" });
+  }
+
+  const handleSection = (item: string) => {
+    setSection(item);
+  };
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
@@ -49,11 +59,25 @@ export default function NavBar() {
             <Searcher />
           </Box>
 
-          <Box sx={{ display: { xs: "none", md: "block" } }}>
+          <Box sx={{ display: { xs: "none", md: "flex" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
-                {item}
-              </Button>
+              <Box
+                key={item}
+                borderRadius={1}
+                sx={{
+                  "&:hover": {
+                    bgcolor: "#c2dcf5",
+                  },
+                }}
+              >
+                {" "}
+                <Button
+                  sx={{ color: "#fff" }}
+                  onClick={() => scrollToTextField(item)}
+                >
+                  {item}
+                </Button>{" "}
+              </Box>
             ))}
           </Box>
         </Toolbar>
