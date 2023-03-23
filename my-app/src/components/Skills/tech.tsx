@@ -16,7 +16,7 @@ const TechSkills = () => {
     >
       <Grid
         item
-        xs={6}
+        xs={5}
         display="flex"
         flexDirection="column"
         alignItems="center"
@@ -25,12 +25,14 @@ const TechSkills = () => {
       >
         <Typography variant="h1">TechSkills</Typography>
       </Grid>
-      <Grid item xs={6} display="flex" border={1}>
+      <Grid item xs={7} display="flex" border={1}>
         <Box
           width="100%"
           display="flex"
           flexWrap="wrap"
           justifyContent="center"
+          p={5}
+          py={9}
         >
           {techSkills.map((sk: Skill) => {
             return <Card key={sk.name} skill={sk} />;

@@ -25,8 +25,15 @@ const Card = ({ skill }: Props) => {
         },
       }}
     >
-      <Typography variant="h5">{skill.name}</Typography>
-      <img width="100%" src={skill.image} alt={skill.name} />
+      <Typography gutterBottom variant="h5">
+        {skill.name}
+      </Typography>
+      <img
+        width="100%"
+        style={{ borderRadius: "15%" }}
+        src={skill.image}
+        alt={skill.name}
+      />
     </Box>
   );
 };

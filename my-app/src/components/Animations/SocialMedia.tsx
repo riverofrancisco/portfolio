@@ -8,6 +8,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import SendIcon from "@mui/icons-material/Send";
+import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
 import { Link } from "@mui/material";
 
 const StyledSpeedDial: React.ElementType<SpeedDialProps> = styled(SpeedDial)(
@@ -51,7 +52,7 @@ export default function SocialMediaSpeedDial() {
     <Box sx={{ transform: "translateZ(0px)", flexGrow: 1 }}>
       <StyledSpeedDial
         ariaLabel="SpeedDial playground example"
-        icon={<SendIcon />}
+        icon={<PersonRoundedIcon />}
         direction="right"
       >
         {actions.map((action) => (

@@ -89,12 +89,20 @@ const LandingPage: React.FC = () => {
           borderRadius="50%"
           border={4}
           borderColor="white"
-          boxShadow={4}
+          boxShadow={2}
+          sx={{
+            "&:hover": {
+              boxShadow: 6,
+            },
+          }}
         >
           <Avatar
             alt="FR"
             src={ProfileIMG}
-            sx={{ width: "100%", height: "100%" }}
+            sx={{
+              width: "100%",
+              height: "100%",
+            }}
           />
         </Box>
       </Grid>
