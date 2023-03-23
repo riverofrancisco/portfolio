@@ -20,8 +20,11 @@ const Card = ({ skill }: Props) => {
       boxShadow={2}
       maxWidth="15%"
       sx={{
+        transition: "transform 0.3s ease-in-out",
         "&:hover": {
-          boxShadow: 6,
+          boxShadow: 3,
+          transform: "scale(1.05)",
+          transitionDelay: "0.05s",
         },
       }}
     >
