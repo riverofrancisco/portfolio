@@ -10,7 +10,6 @@ const ProyectsList = () => {
     <Grid
       container
       style={{ height: "70vh", width: "100vw" }}
-      mt={2}
       borderTop={3}
       borderBottom={3}
       id="Proyects"

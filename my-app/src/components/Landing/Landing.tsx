@@ -61,6 +61,7 @@ const LandingPage: React.FC = () => {
             >
               Francisco Rivero
             </Typography>
+
             <Typography variant="h6">FullStack Developer</Typography>
 
             <Box alignSelf="start" ml={4}>
@@ -81,7 +82,7 @@ const LandingPage: React.FC = () => {
         justifyContent="center"
       >
         <Box
-          width="40%"
+          width="50%"
           display="flex"
           flexDirection="column"
           alignItems="center"

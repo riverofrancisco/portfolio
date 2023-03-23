@@ -18,7 +18,7 @@ const Card = ({ skill }: Props) => {
       margin={2}
       p={1}
       boxShadow={2}
-      maxWidth="20%"
+      maxWidth="15%"
       sx={{
         "&:hover": {
           boxShadow: 6,
