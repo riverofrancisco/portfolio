@@ -86,29 +86,31 @@ export const techSkills: Skill[] = [{
     image: string
     degree: string, 
     timePeriod: string,
-    description: any
+    description: string
   }
+
+  const aptitudesHenry = [
+    "TypeScript",
+    "Node.js",
+    "JavaScript",
+    "React.js",
+    "Redux.js",
+    "Express.js",
+    "Sequelize.js",
+    "PostgreSQL",
+    "HTML",
+    "Scrum",
+    "Planificación de proyectos",
+    "Hablar en público",
+    "Trabajo en equipo"
+  ]
 
   export const myBackground : Background[] = [
     {    institution: "Henry Bootcamp",
     image: "https://www.soyhenry.com/_next/image?url=https%3A%2F%2Fassets.soyhenry.com%2Fhenry-landing%2Fassets%2FHenry%2Flogo-white.png&w=128&q=75",
         degree: "FullStack Developer", 
         timePeriod: "ago 2022 - mar 2023",
-        description: [
-            "TypeScript",
-            "Node.js",
-            "JavaScript",
-            "React.js",
-            "Redux.js",
-            "Express.js",
-            "Sequelize.js",
-            "PostgreSQL",
-            "HTML",
-            "Scrum",
-            "Planificación de proyectos",
-            "Hablar en público",
-            "Trabajo en equipo"
-          ]},
+        description: aptitudesHenry.join(' | ')},
           {    institution: "Universidad de Buenos Aires",
           image: "https://exactas.uba.ar/wp-content/uploads/2022/08/logo-2022.png",
           degree: "Licenciatura en Ciencias Físicas", 

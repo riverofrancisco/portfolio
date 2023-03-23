@@ -10,7 +10,7 @@ const BackgroundList = () => {
   return (
     <Grid
       container
-      style={{ height: "100vh", width: "100vw" }}
+      style={{ height: "70vh", width: "100vw" }}
       mt={2}
       borderTop={3}
       borderBottom={3}
@@ -24,7 +24,7 @@ const BackgroundList = () => {
         alignItems="center"
         border={1}
       >
-        <Typography variant="h1">Background</Typography>
+        <Typography variant="h2">Background</Typography>
       </Grid>
       <Grid
         item
@@ -39,10 +39,13 @@ const BackgroundList = () => {
           display="flex"
           flexWrap="wrap"
           justifyContent="center"
+          alignItems="center"
         >
-          {myBackground.map((b: Background) => {
-            return <BGCard key={b.degree} background={b} />;
-          })}
+          <Box display="flex">
+            {myBackground.map((b: Background) => {
+              return <BGCard key={b.degree} background={b} />;
+            })}
+          </Box>
         </Box>
       </Grid>
     </Grid>

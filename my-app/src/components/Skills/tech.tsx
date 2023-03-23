@@ -23,17 +23,10 @@ const TechSkills = () => {
         justifyContent="center"
         border={1}
       >
-        <Typography variant="h1">TechSkills</Typography>
+        <Typography variant="h2">TechSkills</Typography>
       </Grid>
       <Grid item xs={7} display="flex" border={1}>
-        <Box
-          width="100%"
-          display="flex"
-          flexWrap="wrap"
-          justifyContent="center"
-          p={5}
-          py={9}
-        >
+        <Box display="flex" flexWrap="wrap" justifyContent="center" px={4}>
           {techSkills.map((sk: Skill) => {
             return <Card key={sk.name} skill={sk} />;
           })}

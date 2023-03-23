@@ -14,12 +14,10 @@ const ProyectCard = ({ proyect }: Props) => {
       width="30%"
       flexDirection="column"
       alignItems="center"
-      border={2}
       borderRadius={2}
       margin={1}
       p={3}
       boxShadow={2}
-      bgcolor="lightgrey"
       sx={{
         "&:hover": {
           boxShadow: 6,

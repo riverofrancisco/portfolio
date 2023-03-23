@@ -15,7 +15,7 @@ const Card = ({ skill }: Props) => {
       alignItems="center"
       justifyContent="space-around"
       borderRadius="15%"
-      margin={1}
+      margin={2}
       p={1}
       boxShadow={2}
       maxWidth="20%"

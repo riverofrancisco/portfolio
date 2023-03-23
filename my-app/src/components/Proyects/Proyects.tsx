@@ -9,7 +9,7 @@ const ProyectsList = () => {
   return (
     <Grid
       container
-      style={{ height: "100vh", width: "100vw" }}
+      style={{ height: "70vh", width: "100vw" }}
       mt={2}
       borderTop={3}
       borderBottom={3}
@@ -23,7 +23,7 @@ const ProyectsList = () => {
         alignItems="center"
         border={1}
       >
-        <Typography variant="h1">Proyects</Typography>
+        <Typography variant="h2">Proyects</Typography>
       </Grid>
       <Grid
         item

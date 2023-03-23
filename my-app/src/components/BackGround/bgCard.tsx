@@ -14,12 +14,10 @@ const BGCard = ({ background }: Props) => {
       width="40%"
       flexDirection="column"
       alignItems="center"
-      border={2}
       borderRadius={2}
       margin={1}
       p={1}
       boxShadow={2}
-      bgcolor="lightgrey"
       sx={{
         "&:hover": {
           boxShadow: 6,
@@ -27,12 +25,7 @@ const BGCard = ({ background }: Props) => {
       }}
     >
       <Box width="100%" display="flex" justifyContent="space-around">
-        <img
-          width="110px"
-          height="35px"
-          src={background.image}
-          alt={background.institution}
-        />
+        <img src={background.image} alt={background.institution} />
         <Typography variant="h5">{background.institution}</Typography>
       </Box>
 
