@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import BackgroundList from "../components/BackGround/BackGround";
+import ContactForm from "../components/Form/ContactForm";
 import Footer from "../components/Landing/Footer";
 import LandingPage from "../components/Landing/Landing";
 import NavBar from "../components/Nav/Navbar";
@@ -18,6 +19,7 @@ export const AppRouter = () => {
       <SoftSkills />
       <ProyectsList />
       <BackgroundList />
+      <ContactForm />
       <Footer />
       <Routes></Routes>
     </div>

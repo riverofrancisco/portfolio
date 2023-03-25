@@ -53,9 +53,6 @@ export default function NavBar() {
           >
             FR
           </Typography>
-          <Box sx={{ display: "flex", justifySelf: "end" }}>
-            <Searcher />
-          </Box>
 
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             {navItems.map((item) => (
