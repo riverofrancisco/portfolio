@@ -1,3 +1,4 @@
+
 export const ProfileIMG: string = "https://media.licdn.com/dms/image/D4D03AQHsxi0b5XhyqA/profile-displayphoto-shrink_400_400/0/1678410505495?e=1684368000&v=beta&t=VOCGfREECuNDntEVO-w7RENHjPs45AuhpeMfznOZKtE";
 
 export interface Skill {
@@ -27,11 +28,11 @@ export const techSkills: Skill[] = [{
     },
     {
       name: "CSS",
-      image: "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_css_icon_130661.png"
+      image: "https://w7.pngwing.com/pngs/696/424/png-transparent-logo-css-css3-thumbnail.png"
     },
     {
       name: "HTML",
-      image: "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_html_icon_130541.png"
+      image: "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5.png"
     },
     {
       name: "Node.js",

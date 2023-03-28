@@ -20,8 +20,11 @@ const SoftCard = ({ skill }: Props) => {
       boxShadow={1}
       maxWidth="20%"
       sx={{
+        transition: "transform 0.3s ease-in-out",
         "&:hover": {
           boxShadow: 3,
+          transform: "scale(1.05)",
+          transitionDelay: "0.05s",
         },
       }}
     >
