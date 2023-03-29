@@ -21,6 +21,7 @@ const ProyectsList = () => {
         justifyContent="center"
         alignItems="center"
         border={1}
+        mt={10}
       >
         <Typography variant="h2">Proyects</Typography>
       </Grid>

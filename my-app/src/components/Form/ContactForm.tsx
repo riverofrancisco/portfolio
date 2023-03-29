@@ -4,6 +4,10 @@ import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
 import { Button, Typography } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 export interface Contacts {
   name: string;
@@ -53,7 +57,18 @@ export default function ContactForm() {
       <Grid
         item
         xs={12}
-        border={2}
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        pt={2}
+      >
+        <Typography variant="h5" sx={{ textAlign: "center" }}>
+          Contact Me
+        </Typography>
+      </Grid>
+      <Grid
+        item
+        xs={12}
         display="flex"
         justifyContent="center"
         alignItems="center"
