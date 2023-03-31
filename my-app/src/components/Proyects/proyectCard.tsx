@@ -25,9 +25,10 @@ const ProyectCard = ({ proyect }: Props) => {
     <Grid container display="flex" justifyContent="center" width="40%">
       <Grid
         item
+        border={1}
         xs={12}
         sx={{
-          /* height: !show ? "60%" : "default", */
+          height: "100%",
           "&:hover": {
             cursor: "pointer",
           },

@@ -1,47 +1,57 @@
 import DevsL from './Images/DevsLearningLanding.png'
+import JSlogo from './Images/JavaScript.png'
+import TSlogo from './Images/Typescript.png'
+import REACTlogo from './Images/React.png'
+import MUIlogo from './Images/MaterialUI.png'
+import REDUXlogo from './Images/Redux.png'
+import CSSlogo from './Images/CSS.png'
+import HTMLlogo from './Images/HTML.png'
+import NODElogo from './Images/NODE.png'
+import EXlogo from './Images/Express.png'
+
 
 export const ProfileIMG: string = "https://media.licdn.com/dms/image/D4D03AQHsxi0b5XhyqA/profile-displayphoto-shrink_400_400/0/1678410505495?e=1684368000&v=beta&t=VOCGfREECuNDntEVO-w7RENHjPs45AuhpeMfznOZKtE";
 
 export interface Skill {
     name: string,
-    image: string
+    image: any
 }
 
 export const techSkills: Skill[] = [{
       name: "Javascript",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png"
+      image: JSlogo
     },
     {
       name: "Typescript",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"
+      image: TSlogo
     },
     {
       name: "React",
-      image: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png"
+      image: REACTlogo
     },
     {
       name: "Redux",
-      image: "https://seeklogo.com/images/R/redux-logo-9CA6836C12-seeklogo.com.png"
+      image: REDUXlogo
     },
     {
       name: "Material UI",
-      image: "https://seeklogo.com/images/M/material-ui-logo-5BDCB9BA8F-seeklogo.com.png"
+      image: MUIlogo
     },
     {
       name: "CSS",
-      image: "https://w7.pngwing.com/pngs/696/424/png-transparent-logo-css-css3-thumbnail.png"
+      image: CSSlogo
     },
     {
       name: "HTML",
-      image: "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5.png"
+      image: HTMLlogo
     },
     {
       name: "Node.js",
-      image: "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_node_icon_130301.png"
+      image: NODElogo
     },
     {
       name: "Express",
-      image: "https://wsofter.ru/wp-content/uploads/2017/12/node-express.png"
+      image: EXlogo
     },
     {
       name: "PostgreSQL",
