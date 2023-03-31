@@ -22,6 +22,7 @@ const BackgroundList = () => {
         justifyContent="center"
         alignItems="center"
         border={1}
+        
       >
         <Typography variant="h3">Background</Typography>
       </Grid>

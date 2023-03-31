@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@mui/system";
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import { Background } from "../../data/data";
 import Grid from "@mui/material/Grid";
 
@@ -9,6 +9,10 @@ interface Props {
 }
 
 const BGCard = ({ background }: Props) => {
+  const handleLink = (link: string) => {
+    if (link) window.open(link, "_blank");
+  };
+
   return (
     <Box
       bgcolor="lightgrey"
@@ -38,11 +42,14 @@ const BGCard = ({ background }: Props) => {
           }}
         >
           {" "}
-          <img
-            width="100%"
-            src={background.image}
-            alt={background.institution}
-          />
+          <Button>
+            <img
+              width="100%"
+              src={background.image}
+              alt={background.institution}
+              onClick={() => handleLink(background.link)}
+            />
+          </Button>
         </Grid>
         <Grid
           item

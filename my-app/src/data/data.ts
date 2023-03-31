@@ -1,3 +1,4 @@
+import DevsL from './Images/DevsLearningLanding.png'
 
 export const ProfileIMG: string = "https://media.licdn.com/dms/image/D4D03AQHsxi0b5XhyqA/profile-displayphoto-shrink_400_400/0/1678410505495?e=1684368000&v=beta&t=VOCGfREECuNDntEVO-w7RENHjPs45AuhpeMfznOZKtE";
 
@@ -84,10 +85,11 @@ export const techSkills: Skill[] = [{
 
   export interface Background {
     institution: string,
-    image: string
+    image: string,
     degree: string, 
     timePeriod: string,
-    description: string
+    description: string,
+    link: string,
   }
 
   const aptitudesHenry = [
@@ -108,31 +110,37 @@ export const techSkills: Skill[] = [{
 
   export const myBackground : Background[] = [
     {    institution: "Henry Bootcamp",
-    image: "https://www.soyhenry.com/_next/image?url=https%3A%2F%2Fassets.soyhenry.com%2Fhenry-landing%2Fassets%2FHenry%2Flogo-white.png&w=128&q=75",
-        degree: "FullStack Developer", 
-        timePeriod: "ago 2022 - mar 2023",
-        description: `Experiencia en: ${aptitudesHenry.join(' | ')}.`},
-          {    institution: "Universidad de Buenos Aires",
-          image: "https://exactas.uba.ar/wp-content/uploads/2022/08/logo-2022.png",
-          degree: "Licenciatura en Ciencias Físicas", 
-          timePeriod: "jul 2018 - ago 2022",
-          description: "1° año aprobado | promedio 6.86/10"},  
+         image: "https://www.soyhenry.com/_next/image?url=https%3A%2F%2Fassets.soyhenry.com%2Fhenry-landing%2Fassets%2FHenry%2Flogo-white.png&w=128&q=75",
+         degree: "FullStack Developer", 
+         timePeriod: "ago 2022 - mar 2023",
+         description: `Experiencia en: ${aptitudesHenry.join(' | ')}.`,
+         link: "https://www.soyhenry.com/"
+        },
+    {    institution: "Universidad de Buenos Aires",
+         image: "https://exactas.uba.ar/wp-content/uploads/2022/08/logo-2022.png",
+         degree: "Licenciatura en Ciencias Físicas", 
+         timePeriod: "jul 2018 - ago 2022",
+         description: "1° año aprobado | promedio 6.86/10",
+         link: "https://exactas.uba.ar/"
+        },  
   ]
 
   export interface Proyect {
     name: string,
     period: string,
-    image: string,
+    image: any,
     link: string,
-    description: string
+    description: string,
+    video: string
   }
 
   export const Proyects : Proyect[] = [
     {
       name: "Devs Learning",
       period: "ene. 2023 - mar. 2023",
-      image: "https://youtu.be/ZU7n8LiP5OE",
+      image: DevsL,
       link: "https://devs-learning-5hal.vercel.app/",
+      video: "https://www.youtube.com/watch?v=ZU7n8LiP5OE&t=201s",
       description: "Junto con 7 compañeros, aplicando la metodología ágil de SCRUM, desarrollamos la plataforma responsive de venta de cursos online Devs Learning. Para el mismo utilizamos tecnologías como Typescript, React, Redux Toolkits, Material UI, PostgreSQL, Sequelize, Node, Express, Firebase, Checkbox Mercadopago, entre otras.",
     }
   

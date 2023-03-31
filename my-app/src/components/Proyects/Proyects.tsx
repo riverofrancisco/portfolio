@@ -9,7 +9,7 @@ const ProyectsList = () => {
   return (
     <Grid
       container
-      style={{ height: "70vh", width: "100vw" }}
+      style={{ height: "100%", width: "100vw" }}
       borderTop={3}
       borderBottom={3}
       id="Proyects"
@@ -32,6 +32,7 @@ const ProyectsList = () => {
         flexDirection="row"
         justifyContent="center"
         border={1}
+        py={4}
       >
         <Box
           width="100%"
