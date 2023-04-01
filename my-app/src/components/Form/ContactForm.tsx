@@ -60,9 +60,10 @@ export default function ContactForm() {
         display="flex"
         justifyContent="center"
         alignItems="center"
-        pt={2}
+        mt={10}
+        py={2}
       >
-        <Typography variant="h5" sx={{ textAlign: "center" }}>
+        <Typography variant="h3" sx={{ textAlign: "center" }}>
           Contact Me
         </Typography>
       </Grid>

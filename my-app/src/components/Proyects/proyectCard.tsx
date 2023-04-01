@@ -49,11 +49,10 @@ const ProyectCard = ({ proyect }: Props) => {
           SeeMore();
         }}
       >
-
         <Collapse in={show} collapsedSize="35%" timeout={1000}>
           <img src={proyect.image} alt={proyect.name} width="100%" />
         </Collapse>
-        <Box display="flex" justifyContent="space-between" width="100%">
+        <Box display="flex" justifyContent="space-between" width="100%" mx={1}>
           <Box display="flex" flexDirection="column" alignItems="center">
             <Typography variant="h4">{proyect.name}</Typography>
 
@@ -87,7 +86,6 @@ const ProyectCard = ({ proyect }: Props) => {
             </Box>
           </Grid>
         </Fade>
-
       </Grid>
     </Grid>
   );

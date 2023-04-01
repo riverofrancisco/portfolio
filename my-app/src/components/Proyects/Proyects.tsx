@@ -20,8 +20,8 @@ const ProyectsList = () => {
         display="flex"
         justifyContent="center"
         alignItems="center"
-        border={1}
         mt={10}
+        py={2}
       >
         <Typography variant="h2">Proyects</Typography>
       </Grid>
@@ -31,7 +31,6 @@ const ProyectsList = () => {
         display="flex"
         flexDirection="row"
         justifyContent="center"
-        border={1}
         py={4}
       >
         <Box

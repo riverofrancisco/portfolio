@@ -22,7 +22,8 @@ const BackgroundList = () => {
         justifyContent="center"
         alignItems="center"
         border={1}
-        
+        mt={10}
+        py={2}
       >
         <Typography variant="h3">Background</Typography>
       </Grid>
