@@ -16,19 +16,20 @@ const TechSkills = () => {
     >
       <Grid
         item
-        xs={5}
+        xs={12}
+        md={5}
         display="flex"
         flexDirection="column"
         alignItems="center"
         justifyContent="center"
         border={1}
-        height="100%"
       >
         <Typography variant="h2">TechSkills</Typography>
       </Grid>
       <Grid
         item
-        xs={7}
+        xs={12}
+        md={7}
         display="flex"
         alignItems="center"
         border={1}

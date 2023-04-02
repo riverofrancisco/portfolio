@@ -14,7 +14,7 @@ const SoftSkills = () => {
       borderTop={3}
       borderBottom={3}
     >
-      <Grid item xs={7} width="100%" display="flex" border={1}>
+      <Grid item xs={12} md={7} width="100%" display="flex" border={1}>
         <Box
           display="flex"
           flexWrap="wrap"
@@ -28,7 +28,8 @@ const SoftSkills = () => {
       </Grid>
       <Grid
         item
-        xs={5}
+        xs={12}
+        md={5}
         display="flex"
         flexDirection="column"
         alignItems="center"

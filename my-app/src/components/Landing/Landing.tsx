@@ -38,7 +38,7 @@ const LandingPage: React.FC = () => {
         justifyContent="center"
       >
         <Box
-          height={"55vh"}
+          height="50%"
           display="flex"
           alignItems="center"
           justifyContent="center"
@@ -75,7 +75,7 @@ const LandingPage: React.FC = () => {
         item
         xs={12}
         md={6}
-        sx={{ py: { sm: 20 } }}
+        sx={{ py: { xs: 0, md: 20 } }}
         border={1}
         display="flex"
         alignItems="center"

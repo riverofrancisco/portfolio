@@ -32,7 +32,12 @@ const ProyectCard = ({ proyect }: Props) => {
     }
   }, []);
   return (
-    <Grid container display="flex" justifyContent="center" width="40%">
+    <Grid
+      container
+      display="flex"
+      justifyContent="center"
+      sx={{ width: { xs: "90%", sm: "47%", md: "40%" } }}
+    >
       <Grid
         item
         xs={12}

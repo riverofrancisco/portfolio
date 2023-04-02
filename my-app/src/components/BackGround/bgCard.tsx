@@ -17,7 +17,6 @@ const BGCard = ({ background }: Props) => {
     <Box
       bgcolor="lightgrey"
       display="flex"
-      width="40%"
       flexDirection="column"
       alignItems="center"
       borderRadius={2}
@@ -25,6 +24,7 @@ const BGCard = ({ background }: Props) => {
       p={1}
       boxShadow={2}
       sx={{
+        width: { xs: "90%", md: "40%" },
         transition: "transform 0.3s ease-in-out",
         "&:hover": {
           boxShadow: 3,
