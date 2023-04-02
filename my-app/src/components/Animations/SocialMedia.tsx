@@ -8,7 +8,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import SendIcon from "@mui/icons-material/Send";
-import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
+import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
 import { Link } from "@mui/material";
 
 const StyledSpeedDial: React.ElementType<SpeedDialProps> = styled(SpeedDial)(
@@ -58,6 +58,7 @@ export default function SocialMediaSpeedDial() {
         {actions.map((action) => (
           <SpeedDialAction
             icon={action.icon}
+            key={action.name}
             tooltipTitle={action.name}
             onClick={() => handleLink(action.linkto)}
           />
