@@ -28,9 +28,17 @@ const Card = ({ skill }: Props) => {
         },
       }}
     >
-      <Typography gutterBottom variant="h5">
-        {skill.name}
-      </Typography>
+      <Box
+        width="100%"
+        sx={{
+          display: "flex",
+          justifyContent: "center"
+        }}
+      >
+        <Typography gutterBottom sx={{ variant: { xs: "body", md: "h5" } }}>
+          {skill.name}
+        </Typography>
+      </Box>
       <img
         width="100%"
         style={{ borderRadius: "15%" }}

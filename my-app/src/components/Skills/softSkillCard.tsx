@@ -23,12 +23,13 @@ const SoftCard = ({ skill }: Props) => {
         transition: "transform 0.3s ease-in-out",
         "&:hover": {
           boxShadow: 3,
+          bgcolor: "whitesmoke",
           transform: "scale(1.05)",
           transitionDelay: "0.05s",
         },
       }}
     >
-      <Typography variant="h5" m={5}>
+      <Typography variant="body1" m={5} flexWrap="wrap">
         {skill.name}
       </Typography>
     </Box>

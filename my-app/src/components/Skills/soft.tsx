@@ -38,7 +38,16 @@ const SoftSkills = () => {
         justifyContent="center"
         border={1}
       >
-        <Typography variant="h2">SoftSkills</Typography>
+        <Typography
+          variant="h2"
+          fontWeight="bolder"
+          style={{
+            textShadow:
+              "2px 2px 0px rgba(255, 255, 255, 0.5), 4px 4px 2px rgba(0, 0, 0, 0.15)",
+          }}
+        >
+          SoftSkills
+        </Typography>
       </Grid>
     </Grid>
   );
