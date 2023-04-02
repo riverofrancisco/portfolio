@@ -115,7 +115,14 @@ export default function ContactForm() {
   };
 
   return (
-    <Grid container id="Contact" key="contact-form" height="100%" py={2}>
+    <Grid
+      container
+      xs={12}
+      id="Contact"
+      key="contact-form"
+      height="100%"
+      py={2}
+    >
       <Grid
         item
         xs={12}

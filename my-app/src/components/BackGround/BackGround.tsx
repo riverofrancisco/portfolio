@@ -10,6 +10,7 @@ const BackgroundList = () => {
   return (
     <Grid
       container
+      xs={12}
       bgcolor="whitesmoke"
       style={{ height: "100%", width: "100vw" }}
       sx={{ py: 4 }}

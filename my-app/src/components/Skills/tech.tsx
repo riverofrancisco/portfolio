@@ -9,6 +9,7 @@ const TechSkills = () => {
   return (
     <Grid
       container
+      xs={12}
       style={{ height: "100%", width: "100vw" }}
       sx={{ py: { xs: 4, md: 14 } }}
       borderTop={3}

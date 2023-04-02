@@ -23,6 +23,7 @@ const LandingPage: React.FC = () => {
   return (
     <Grid
       container
+      xs={12}
       direction="row"
       style={{ height: "100vh", width: "100vw" }}
       bgcolor="whitesmoke"
@@ -54,7 +55,7 @@ const LandingPage: React.FC = () => {
               sx={{
                 display: { md: "flex" },
                 fontFamily: "monospace",
-                fontWeight: 700,
+                fontWeight: 900,
                 letterSpacing: ".3rem",
                 color: "inherit",
                 textDecoration: "none",

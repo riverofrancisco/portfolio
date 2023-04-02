@@ -65,33 +65,33 @@ export default function NavBar() {
     };
 
   return (
-    <div>
-      <Box sx={{ display: "flex" }}>
-        <SwipeableDrawer
-          anchor="left"
-          open={mobileOpen}
-          onClose={toggleDrawer(false)}
-          onOpen={toggleDrawer(true)}
+    <Box display="flex" width="100%" flexDirection="column">
+      <SwipeableDrawer
+        anchor="top"
+        open={mobileOpen}
+        onClose={toggleDrawer(false)}
+        onOpen={toggleDrawer(true)}
+      >
+        <Box
+          sx={{ width: "auto" }}
+          role="presentation"
+          onClick={toggleDrawer(false)}
+          onKeyDown={toggleDrawer(false)}
         >
-          <Box
-            sx={{ width: "auto" }}
-            role="presentation"
-            onClick={toggleDrawer(false)}
-            onKeyDown={toggleDrawer(false)}
-          >
-            <List>
-              {navItems.map((it) => {
-                return (
-                  <ListItem key={it} disablePadding>
-                    <ListItemButton onClick={() => scrollToTextField(it)}>
-                      {it}
-                    </ListItemButton>
-                  </ListItem>
-                );
-              })}
-            </List>
-          </Box>
-        </SwipeableDrawer>
+          <List>
+            {navItems.map((it) => {
+              return (
+                <ListItem key={it} disablePadding>
+                  <ListItemButton onClick={() => scrollToTextField(it)}>
+                    {it}
+                  </ListItemButton>
+                </ListItem>
+              );
+            })}
+          </List>
+        </Box>
+      </SwipeableDrawer>
+      <Box sx={{ display: "flex" }}>
         <CssBaseline />
 
         <AppBar component="nav">
@@ -143,6 +143,6 @@ export default function NavBar() {
           </Toolbar>
         </AppBar>
       </Box>
-    </div>
+    </Box>
   );
 }
