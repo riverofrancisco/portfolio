@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
@@ -48,18 +48,49 @@ export default function ContactForm() {
     }
   }
 
-  
+  //BUTTON
+  const [submiteable, setSubmiteable] = useState(false);
+
+  function isSubmiteable() {
+    if (!name) {
+      setSubmiteable(false);
+    } else if (!lastName) {
+      setSubmiteable(false);
+    } else if (!email || !validEmail) {
+      setSubmiteable(false);
+    } else if (!message) {
+      setSubmiteable(false);
+    } else {
+      setSubmiteable(true);
+    }
+  }
+
+  useEffect(() => {
+    isSubmiteable();
+  });
+
+  ////SUBMIT
   const form = useRef<HTMLFormElement>(null);
 
-  const handleSubmit = (event: React.FormEvent<HTMLInputElement>) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     if (!form.current) {
       return;
     }
 
+    console.log(`serviceID: ${serviceID}`);
+    console.log(`template: ${templateID}`);
+    console.log(`${form.current}`);
+    console.log(`${publicKey}`);
+
     emailjs
-      .sendForm(`${serviceID}`, `${templateID}`, form.current, publicKey)
+      .sendForm(
+        `service_portfolio`,
+        `template_7omt3ti`,
+        form.current,
+        "K2SVcEaEn3fPaafzK"
+      )
       .then(
         (response: EmailJSResponseStatus) => {
           alert("Email sent successfully!");
@@ -74,15 +105,14 @@ export default function ContactForm() {
       );
   };
   return (
-    <Grid container id="Contact" key="contact-form">
+    <Grid container id="Contact" key="contact-form" height="100%" py={2}>
       <Grid
         item
         xs={12}
         display="flex"
         justifyContent="center"
         alignItems="center"
-        mt={10}
-        py={2}
+        sx={{ mt: { xs: 2, md: 4 } }}
       >
         <Typography variant="h3" sx={{ textAlign: "center" }}>
           Contact Me
@@ -95,71 +125,78 @@ export default function ContactForm() {
         justifyContent="center"
         alignItems="center"
       >
-        <form ref={form} onSubmit={handleSubmit}>
-          <Box my={5} maxWidth="90%" display="flex" flexDirection="column">
-            <Box display="flex" justifyContent="space-between" width="100%">
+        <Box my={3} maxWidth="90%" display="flex" flexDirection="column">
+          <form ref={form} onSubmit={handleSubmit}>
+            <Box maxWidth="100%" display="flex" flexDirection="column">
+              <Box display="flex" justifyContent="space-between" width="100%">
+                <TextField
+                  name="from_name"
+                  required
+                  id="name"
+                  label="Name"
+                  variant="outlined"
+                  sx={{ my: 1, width: "48%" }}
+                  value={name}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                    setName(e.target.value)
+                  }
+                />
+                <TextField
+                  name="last_name"
+                  required
+                  id="lastName"
+                  label="Last Name"
+                  variant="outlined"
+                  sx={{ my: 1, width: "48%" }}
+                  value={lastName}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                    setLastName(e.target.value)
+                  }
+                />
+              </Box>
               <TextField
+                name="email"
                 required
-                id="name"
-                label="Name"
+                error={!validEmail}
+                helperText={!validEmail && "Please enter a valid email"}
+                onBlur={validateEmail}
+                id="email"
+                label="Email"
                 variant="outlined"
-                sx={{ my: 1, width: "48%" }}
-                value={name}
+                sx={{ my: 1 }}
+                value={email}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                  setName(e.target.value)
+                  setEmail(e.target.value)
                 }
               />
               <TextField
+                name="message"
                 required
-                id="lastName"
-                label="Last Name"
+                id="message"
+                label="Message"
                 variant="outlined"
-                sx={{ my: 1, width: "48%" }}
-                value={lastName}
+                multiline
+                rows={8}
+                sx={{ my: 1, width: "100%" }}
+                value={message}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                  setLastName(e.target.value)
+                  setMessage(e.target.value)
                 }
               />
-            </Box>
-            <TextField
-              required
-              error={!validEmail}
-              helperText={!validEmail && "Please enter a valid email"}
-              onBlur={validateEmail}
-              id="email"
-              label="Email"
-              variant="outlined"
-              sx={{ my: 1 }}
-              value={email}
-              onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                setEmail(e.target.value)
-              }
-            />
-            <TextField
-              required
-              id="message"
-              label="Message"
-              variant="outlined"
-              multiline
-              rows={8}
-              sx={{ my: 1, width: "100%" }}
-              value={message}
-              onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                setMessage(e.target.value)
-              }
-            />
 
-            <Button
-              type="submit"
-              variant="contained"
-              color="secondary"
-              endIcon={<SendIcon />}
-              sx={{ my: 1, width: "50%", alignSelf: "center" }}
-            >
-              <Typography variant="button"> Send Mesagge</Typography>
-            </Button>
-          </Box>
-        </form>
+              <Button
+                type="submit"
+                variant="contained"
+                color="secondary"
+                endIcon={<SendIcon />}
+                disabled={!submiteable}
+                sx={{ my: 1, width: "50%", alignSelf: "center" }}
+              >
+                <Typography variant="button"> Send Mesagge</Typography>
+              </Button>
+            </Box>
+          </form>
+        </Box>
       </Grid>
     </Grid>
   );

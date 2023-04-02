@@ -10,7 +10,9 @@ const SoftSkills = () => {
   return (
     <Grid
       container
-      style={{ height: "70vh", width: "100vw" }}
+      bgcolor="lightgrey"
+      style={{ height: "100%", width: "100vw" }}
+      sx={{ py: 4 }}
       borderTop={3}
       borderBottom={3}
     >

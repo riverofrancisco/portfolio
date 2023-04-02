@@ -10,7 +10,9 @@ const BackgroundList = () => {
   return (
     <Grid
       container
-      style={{ height: "70vh", width: "100vw" }}
+      bgcolor="whitesmoke"
+      style={{ height: "100%", width: "100vw" }}
+      sx={{ py: 4 }}
       borderTop={3}
       borderBottom={1}
       id="Background"
@@ -22,7 +24,7 @@ const BackgroundList = () => {
         justifyContent="center"
         alignItems="center"
         border={1}
-        mt={10}
+        sx={{ mt: { xs: 0, md: 10 }, mb: 4 }}
         py={2}
       >
         <Typography variant="h3">Background</Typography>

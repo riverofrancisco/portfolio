@@ -36,6 +36,7 @@ const LandingPage: React.FC = () => {
         display="flex"
         alignItems="center"
         justifyContent="center"
+        py={6}
       >
         <Box
           height="50%"

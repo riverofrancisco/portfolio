@@ -9,7 +9,8 @@ const TechSkills = () => {
   return (
     <Grid
       container
-      style={{ height: "100vh", width: "100vw" }}
+      style={{ height: "100%", width: "100vw" }}
+      sx={{ py: { xs: 4, md: 14 } }}
       borderTop={3}
       borderBottom={3}
       id="Skills"
@@ -36,7 +37,7 @@ const TechSkills = () => {
         height="100%"
       >
         <Box
-          height="60%"
+          height="70%"
           display="flex"
           flexWrap="wrap"
           justifyContent="center"
