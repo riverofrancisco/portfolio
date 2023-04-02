@@ -2,13 +2,15 @@ import React, { useState, useRef, useEffect } from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
-import { Button, Typography } from "@mui/material";
+import { Button, Fade, Typography } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
+import Alert from "@mui/material/Alert";
+
 const { publicKey, templateID, serviceID } = process.env;
 
 export interface Contacts {
@@ -69,6 +71,9 @@ export default function ContactForm() {
     isSubmiteable();
   });
 
+  ////ALERT
+  const [showAlert, setShowAlert] = useState(false);
+
   ////SUBMIT
   const form = useRef<HTMLFormElement>(null);
 
@@ -94,6 +99,10 @@ export default function ContactForm() {
       .then(
         (response: EmailJSResponseStatus) => {
           alert("Email sent successfully!");
+          setShowAlert(true);
+          setTimeout(() => {
+            setShowAlert(false);
+          }, 3000);
           setName("");
           setLastName("");
           setEmail("");
@@ -104,6 +113,7 @@ export default function ContactForm() {
         }
       );
   };
+
   return (
     <Grid container id="Contact" key="contact-form" height="100%" py={2}>
       <Grid
@@ -194,6 +204,9 @@ export default function ContactForm() {
               >
                 <Typography variant="button"> Send Mesagge</Typography>
               </Button>
+              <Fade in={showAlert}>
+                <Alert severity="success">Email sent successfully!</Alert>
+              </Fade>
             </Box>
           </form>
         </Box>
