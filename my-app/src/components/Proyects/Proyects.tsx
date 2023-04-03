@@ -24,7 +24,16 @@ const ProyectsList = () => {
         mt={10}
         py={2}
       >
-        <Typography variant="h2">Proyects</Typography>
+        <Typography
+          variant="h2"
+          fontWeight="bolder"
+          style={{
+            textShadow:
+              "2px 2px 0px rgba(255, 255, 255, 0.5), 4px 4px 2px rgba(0, 0, 0, 0.15)",
+          }}
+        >
+          Proyects
+        </Typography>
       </Grid>
       <Grid
         item

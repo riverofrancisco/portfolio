@@ -25,24 +25,31 @@ const BackgroundList = () => {
         justifyContent="center"
         alignItems="center"
         border={1}
-        sx={{ mt: { xs: 0, md: 10 }, mb: 4 }}
+        sx={{ mt: { xs: 0, md: 6 }, mb: { xs: 4, md: 8 } }}
         py={2}
       >
-        <Typography variant="h3">Background</Typography>
+        <Typography
+          variant="h3"
+          fontWeight="bolder"
+          style={{
+            textShadow:
+              "2px 2px 0px rgba(255, 255, 255, 0.5), 4px 4px 2px rgba(0, 0, 0, 0.15)",
+          }}
+        >
+          Background
+        </Typography>
       </Grid>
       <Grid item xs={12} display="flex" justifyContent="center" border={1}>
         <Box
           width="100%"
           display="flex"
           flexWrap="wrap"
-          justifyContent="center"
+          justifyContent="space-evenly"
           alignItems="center"
         >
-          <Box display="flex" justifyContent="center">
-            {myBackground.map((b: Background) => {
-              return <BGCard key={b.degree} background={b} />;
-            })}
-          </Box>
+          {myBackground.map((b: Background) => {
+            return <BGCard key={b.degree} background={b} />;
+          })}
         </Box>
       </Grid>
     </Grid>

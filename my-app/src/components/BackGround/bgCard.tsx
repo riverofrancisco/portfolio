@@ -14,71 +14,81 @@ const BGCard = ({ background }: Props) => {
   };
 
   return (
-    <Box
-      bgcolor="lightgrey"
-      display="flex"
-      flexDirection="column"
-      alignItems="center"
-      borderRadius={2}
-      margin={1}
-      p={1}
-      boxShadow={2}
-      sx={{
-        width: { xs: "90%", md: "40%" },
-        transition: "transform 0.3s ease-in-out",
-        "&:hover": {
-          boxShadow: 3,
-          transform: "scale(1.01)",
-          transitionDelay: "0.05s",
-        },
-      }}
-    >
-      <Grid container bgcolor="lightgrey">
-        <Grid
-          item
-          xs={4}
+    <Grid container sx={{ width: { xs: "90%", sm: "47%", md: "40%" } }}>
+      <Grid item xs={12}>
+        <Box
+          bgcolor="lightgrey"
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          borderRadius={2}
+          margin={1}
+          p={2}
+          boxShadow={2}
           sx={{
-            p: 1,
+            width: "100%",
+            transition: "transform 0.3s ease-in-out",
+            "&:hover": {
+              boxShadow: 3,
+              transform: "scale(1.01)",
+              transitionDelay: "0.05s",
+            },
           }}
         >
-          {" "}
-          <Button>
-            <img
-              width="100%"
-              src={background.image}
-              alt={background.institution}
-              onClick={() => handleLink(background.link)}
-            />
-          </Button>
-        </Grid>
-        <Grid
-          item
-          xs={8}
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <Typography variant="h5">{background.institution}</Typography>
-          <Typography variant="h6">{background.degree}</Typography>
-          <Typography gutterBottom variant="overline">
-            {background.timePeriod}
-          </Typography>
-        </Grid>
-        <Grid
-          item
-          xs={12}
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <Typography variant="body1">{background.description}</Typography>
-        </Grid>
+          <Grid container>
+            <Grid
+              item
+              xs={4}
+              sx={{
+                p: 1,
+              }}
+            >
+              {" "}
+              <Button>
+                <img
+                  width="100%"
+                  src={background.image}
+                  alt={background.institution}
+                  onClick={() => handleLink(background.link)}
+                />
+              </Button>
+            </Grid>
+            <Grid
+              item
+              xs={8}
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <Typography variant="h5">{background.institution}</Typography>
+              <Typography
+                variant="subtitle1"
+                fontStyle="italic"
+                fontWeight={100}
+              >
+                {background.degree}
+              </Typography>
+              <Typography gutterBottom variant="overline">
+                {background.timePeriod}
+              </Typography>
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Typography variant="body1">{background.description}</Typography>
+            </Grid>
+          </Grid>
+        </Box>
       </Grid>
-    </Box>
+    </Grid>
   );
 };
 

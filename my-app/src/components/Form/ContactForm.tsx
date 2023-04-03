@@ -131,7 +131,15 @@ export default function ContactForm() {
         alignItems="center"
         sx={{ mt: { xs: 2, md: 4 } }}
       >
-        <Typography variant="h3" sx={{ textAlign: "center" }}>
+        <Typography
+          variant="h3"
+          sx={{ textAlign: "center" }}
+          fontWeight="bolder"
+          style={{
+            textShadow:
+              "2px 2px 0px rgba(255, 255, 255, 0.5), 4px 4px 2px rgba(0, 0, 0, 0.15)",
+          }}
+        >
           Contact Me
         </Typography>
       </Grid>
