@@ -11,7 +11,7 @@ const SoftSkills = () => {
     <Grid
       container
       xs={12}
-      bgcolor="lightgrey"
+      
       style={{ height: "100%", width: "100vw" }}
       sx={{ py: 4 }}
       borderTop={3}

@@ -7,10 +7,26 @@ import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
 
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
+import { getDesignTokens } from "./Theme/theme";
+
+/* const [mode, setMode] = React.useState<any>("light");
+const colorMode = React.useMemo(
+  () => ({
+    // The dark mode switch would invoke this method
+    toggleColorMode: () => {
+      setMode((prevMode: any) => (prevMode === "light" ? "dark" : "light"));
+    },
+  }),
+  []
+);
+
+// Update the theme only if the mode changes
+const theme = React.useMemo(() => createTheme(getDesignTokens(mode)), [mode]); */
 
 let theme = createTheme({
   palette: {
+    mode: "dark",
     primary: {
       main: "#a7cdf0",
     },
@@ -36,11 +52,13 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
+    {/* <ColorModeContext.Provider value={colorMode}> */}
     <ThemeProvider theme={theme}>
       <Provider store={store}>
         <App />
       </Provider>
     </ThemeProvider>
+    {/* </ColorModeContext.Provider> */}
   </React.StrictMode>
 );
 

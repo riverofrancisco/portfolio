@@ -123,10 +123,10 @@ export default function NavBar() {
                 <Box
                   key={item}
                   borderRadius={1}
-                  bgcolor={section === item ? "#c2dcf5" : "primary"}
+                  borderBottom={section === item ? 1 : 0}
                   sx={{
                     "&:hover": {
-                      bgcolor: "#c2dcf5",
+                      borderBottom: 1,
                     },
                   }}
                 >
@@ -135,7 +135,7 @@ export default function NavBar() {
                     sx={{ color: "#fff" }}
                     onClick={() => scrollToTextField(item)}
                   >
-                    {item}
+                    <Typography color="primary">{item}</Typography>
                   </Button>{" "}
                 </Box>
               ))}

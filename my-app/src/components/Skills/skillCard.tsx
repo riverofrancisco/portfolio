@@ -22,6 +22,7 @@ const Card = ({ skill }: Props) => {
         width: { xs: "23%", md: "15%" },
         transition: "transform 0.3s ease-in-out",
         "&:hover": {
+          border: 1,
           boxShadow: 3,
           transform: "scale(1.05)",
           transitionDelay: "0.05s",
@@ -32,7 +33,7 @@ const Card = ({ skill }: Props) => {
         width="100%"
         sx={{
           display: "flex",
-          justifyContent: "center"
+          justifyContent: "center",
         }}
       >
         <Typography gutterBottom sx={{ variant: { xs: "body", md: "h5" } }}>
