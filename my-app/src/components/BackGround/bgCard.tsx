@@ -17,7 +17,6 @@ const BGCard = ({ background }: Props) => {
     <Grid container sx={{ width: { xs: "90%", sm: "47%", md: "40%" } }}>
       <Grid item xs={12}>
         <Box
-          bgcolor="lightgrey"
           display="flex"
           flexDirection="column"
           alignItems="center"

@@ -18,12 +18,14 @@ const SoftCard = ({ skill }: Props) => {
       margin={1}
       px={4}
       boxShadow={1}
+      borderLeft={1}
+      borderRight={1}
+      borderColor="white"
       sx={{
         width: { xs: "27%", sm: "20%", md: "15%" },
         transition: "transform 0.3s ease-in-out",
         "&:hover": {
           boxShadow: 3,
-          bgcolor: "whitesmoke",
           transform: "scale(1.05)",
           transitionDelay: "0.05s",
         },

@@ -26,15 +26,20 @@ const theme = React.useMemo(() => createTheme(getDesignTokens(mode)), [mode]); *
 
 let theme = createTheme({
   palette: {
-    mode: "dark",
     primary: {
-      main: "#a7cdf0",
+      main: "#75AADB",
     },
     secondary: {
-      main: "#f8bb05",
+      main: "#FFD700",
     },
-    info: {
-      main: "#9c27b0",
+    mode: "dark",
+    background: {
+      default: "#121212",
+      paper: "#1E1E1E",
+    },
+    text: {
+      primary: "#FFFFFF",
+      secondary: "#B3B3B3",
     },
   },
 });

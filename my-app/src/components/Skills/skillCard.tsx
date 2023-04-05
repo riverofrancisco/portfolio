@@ -16,13 +16,15 @@ const Card = ({ skill }: Props) => {
       justifyContent="space-around"
       borderRadius="15%"
       margin={2}
+      borderTop={1}
+      borderBottom={1}
+      borderColor="white"
       p={1}
       boxShadow={2}
       sx={{
         width: { xs: "23%", md: "15%" },
         transition: "transform 0.3s ease-in-out",
         "&:hover": {
-          border: 1,
           boxShadow: 3,
           transform: "scale(1.05)",
           transitionDelay: "0.05s",

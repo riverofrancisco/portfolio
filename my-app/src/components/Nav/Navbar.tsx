@@ -21,11 +21,23 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import Searcher from "./Searcher";
 import { Link } from "@mui/material";
 
+import DarkModeRoundedIcon from "@mui/icons-material/DarkModeRounded";
+import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
+
 const navItems = ["Home", "Skills", "Proyects", "Background", "Contact"];
 
 export default function NavBar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [section, setSection] = React.useState("");
+  ////DARK MODE
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const handleToggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    // Lógica para cambiar el tema aquí
+  };
+
+  ////SCROLLING WITH CLICK
 
   function scrollToTextField(id: string) {
     if (mobileOpen) setMobileOpen(false);
@@ -95,7 +107,13 @@ export default function NavBar() {
         <CssBaseline />
 
         <AppBar component="nav">
-          <Toolbar sx={{ px: { xs: 5, md: 5 } }}>
+          <Toolbar
+            sx={{
+              px: { xs: 5, md: 5 },
+              display: "flex",
+              justifyContent: "space-between",
+            }}
+          >
             <IconButton
               color="inherit"
               aria-label="open drawer"
@@ -140,6 +158,18 @@ export default function NavBar() {
                 </Box>
               ))}
             </Box>
+            <Button
+              size="small"
+              color="inherit"
+              onClick={handleToggleDarkMode}
+              sx={{ display: "flex", justifySelf: "end" }}
+            >
+              {isDarkMode ? <LightModeRoundedIcon /> : <DarkModeRoundedIcon />}
+
+              {/* <Typography ml={1} color="primary" variant="button">
+                {isDarkMode ? "Light Mode" : "Dark Mode"}
+              </Typography> */}
+            </Button>
           </Toolbar>
         </AppBar>
       </Box>
