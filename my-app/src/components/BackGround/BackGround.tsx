@@ -17,7 +17,7 @@ const BackgroundList = () => {
       bgcolor="paper"
       /*      borderTop={3}
       borderBottom={1} */
-      id="Background"
+      id="Formacion"
     >
       <Grid
         item

@@ -14,7 +14,7 @@ const TechSkills = () => {
       sx={{ py: { xs: 4, md: 14 } }}
       /*      borderTop={3}
       borderBottom={3} */
-      id="Skills"
+      id="Habilidades"
     >
       <Grid
         item
@@ -34,7 +34,7 @@ const TechSkills = () => {
               "2px 2px 0px rgba(255, 255, 255, 0.5), 4px 4px 2px rgba(0, 0, 0, 0.15)",
           }}
         >
-          TechSkills
+         Habilidades Técnicas
         </Typography>
       </Grid>
       <Grid

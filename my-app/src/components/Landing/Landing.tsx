@@ -26,7 +26,7 @@ const LandingPage: React.FC = () => {
       xs={12}
       direction="row"
       style={{ height: "100vh", width: "100vw" }}
-      id="Home"
+      id="Inicio"
     >
       <Grid
         item

@@ -62,31 +62,31 @@ export const techSkills: Skill[] = [{
 
   export const softSkills : Skill[] = [
         {
-          name: "Proactive",
+          name: "Proactividad",
           image: "https://cdn4.iconfinder.com/data/icons/softskill-flat/64/softskills-07-512.png"
         },
         {
-          name: "Goal Achievement",
+          name: "Orientación a objetivos",
           image: "https://cdn4.iconfinder.com/data/icons/softskill-flat/64/softskills-06-512.png"
         },
         {
-          name: "Planning and Organization",
+          name: "Planificación",
           image: "https://cdn4.iconfinder.com/data/icons/softskill-flat/64/softskills-05-512.png"
         },
         {
-          name: "Empathy",
+          name: "Empatía",
           image: "https://cdn4.iconfinder.com/data/icons/softskill-flat/64/softskills-04-512.png"
         },
         {
-          name: "Public Speaking",
+          name: "Hablar en público",
           image: "https://cdn4.iconfinder.com/data/icons/softskill-flat/64/softskills-03-512.png"
         },
         {
-          name: "Team Player",
+          name: "Trabajo en Equipo",
           image: "https://cdn4.iconfinder.com/data/icons/softskill-flat/64/softskills-02-512.png"
         },
         {
-          name: "Leadership",
+          name: "Liderazgo",
           image: "https://cdn4.iconfinder.com/data/icons/softskill-flat/64/softskills-01-512.png"
         }
        

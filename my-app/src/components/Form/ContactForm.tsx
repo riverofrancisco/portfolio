@@ -140,7 +140,7 @@ export default function ContactForm() {
               "2px 2px 0px rgba(255, 255, 255, 0.5), 4px 4px 2px rgba(0, 0, 0, 0.15)",
           }}
         >
-          Contact Me
+          Contacto
         </Typography>
       </Grid>
       <Grid
@@ -217,10 +217,10 @@ export default function ContactForm() {
                 disabled={!submiteable}
                 sx={{ my: 1, width: "50%", alignSelf: "center" }}
               >
-                <Typography variant="button"> Send Mesagge</Typography>
+                <Typography variant="button"> Enviar Mensaje</Typography>
               </Button>
               <Fade in={showAlert}>
-                <Alert severity="success">Email sent successfully!</Alert>
+                <Alert severity="success">Message sent successfully!</Alert>
               </Fade>
             </Box>
           </form>

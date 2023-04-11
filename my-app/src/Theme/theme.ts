@@ -24,7 +24,7 @@ export const getDesignTokens = (mode: PaletteMode) => ({
           secondary: {main: Colours.Amarillo},
           divider: Colours.Amarillo,
           text: {
-            primary: Colours.Negro,
+            primary: Colours.GrisOscuro,
             secondary: Colours.Celeste,
           },
           background: {

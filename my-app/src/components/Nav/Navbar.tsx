@@ -26,7 +26,13 @@ import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
 import { useAppDispatch, useAppSelector } from "../../hooks/hooksRedux";
 import { ModeSwitcher } from "../../redux/portfolio/actions";
 
-const navItems = ["Home", "Skills", "Proyects", "Background", "Contact"];
+const navItems = [
+  "Inicio",
+  "Habilidades",
+  "Proyectos",
+  "Formacion",
+  "Contacto",
+];
 
 export default function NavBar() {
   //// REDUX DARK/LIGHTMODE

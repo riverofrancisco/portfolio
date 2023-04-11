@@ -13,7 +13,7 @@ const ProyectsList = () => {
       style={{ height: "100%", width: "100vw" }}
       /*       borderTop={3}
       borderBottom={3} */
-      id="Proyects"
+      id="Proyectos"
     >
       <Grid
         item
