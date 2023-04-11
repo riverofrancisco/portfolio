@@ -1,13 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { PaletteMode } from '@mui/material';
 
 interface InitialState {
     value: number,
     status: string,
+    mode: PaletteMode,
 }
 
 const initialState: InitialState = {
 value: 0,
 status: "ok",
+mode: "light"
 }
 
 export const global = createSlice({
@@ -20,9 +23,15 @@ reducers: {
     changeStatus: (state, {payload}) => {
         if(state.status === "ok"){
             state.status = "loading"
-        } if(state.status === "loading")
+        } else if(state.status === "loading")
         state.status = "ok"
-    }
+    },
+    changeMode: (state) => {
+        if(state.mode === "light"){
+            state.mode = "dark"
+        } else if(state.mode === "dark")
+        state.mode = "light"
+    },
 }
 
 })

@@ -23,17 +23,26 @@ import { Link } from "@mui/material";
 
 import DarkModeRoundedIcon from "@mui/icons-material/DarkModeRounded";
 import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
+import { useAppDispatch, useAppSelector } from "../../hooks/hooksRedux";
+import { ModeSwitcher } from "../../redux/portfolio/actions";
 
 const navItems = ["Home", "Skills", "Proyects", "Background", "Contact"];
 
 export default function NavBar() {
+  //// REDUX DARK/LIGHTMODE
+  const dispatch = useAppDispatch();
+  const currentMode = useAppSelector((state) => state.global.mode);
+
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [section, setSection] = React.useState("");
   ////DARK MODE
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const handleToggleDarkMode = () => {
+    dispatch(ModeSwitcher());
+    console.log(currentMode);
     setIsDarkMode(!isDarkMode);
+
     // Lógica para cambiar el tema aquí
   };
 
@@ -153,18 +162,18 @@ export default function NavBar() {
                     sx={{ color: "#fff" }}
                     onClick={() => scrollToTextField(item)}
                   >
-                    <Typography color="primary">{item}</Typography>
+                    <Typography>{item}</Typography>
                   </Button>{" "}
                 </Box>
               ))}
             </Box>
             <Button
               size="small"
-              color="inherit"
+              color="secondary"
               onClick={handleToggleDarkMode}
               sx={{ display: "flex", justifySelf: "end" }}
             >
-              {isDarkMode ? <LightModeRoundedIcon /> : <DarkModeRoundedIcon />}
+              {isDarkMode ? <DarkModeRoundedIcon /> : <LightModeRoundedIcon />}
 
               {/* <Typography ml={1} color="primary" variant="button">
                 {isDarkMode ? "Light Mode" : "Dark Mode"}

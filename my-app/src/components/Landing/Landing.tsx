@@ -104,6 +104,12 @@ const LandingPage: React.FC = () => {
             sx={{
               width: "100%",
               height: "100%",
+              transition: "transform 0.3s ease-in-out",
+              "&:hover": {
+                boxShadow: 3,
+                transform: "scale(1.05)",
+                transitionDelay: "0.05s",
+              },
             }}
           />
         </Box>
