@@ -32,7 +32,7 @@ const LandingPage: React.FC = () => {
         item
         xs={12}
         md={6}
-        border={1}
+        /*   border={1} */
         display="flex"
         alignItems="center"
         justifyContent="center"
@@ -77,7 +77,7 @@ const LandingPage: React.FC = () => {
         xs={12}
         md={6}
         sx={{ py: { xs: 0, md: 20 } }}
-        border={1}
+        /*    border={1} */
         display="flex"
         alignItems="center"
         justifyContent="center"

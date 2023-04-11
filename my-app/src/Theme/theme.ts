@@ -27,6 +27,10 @@ export const getDesignTokens = (mode: PaletteMode) => ({
             primary: Colours.Negro,
             secondary: Colours.Celeste,
           },
+          background: {
+            default: Colours.BlancoGrisaceo,
+                     
+          },
         }
       : {
           // palette values for dark mode
@@ -34,8 +38,8 @@ export const getDesignTokens = (mode: PaletteMode) => ({
           secondary: {main: Colours.Blanco},
           divider: Colours.GrisMedio,
           background: {
-            default: Colours.Negro,
-            paper: Colours.GrisOscuro,
+            default: Colours.GrisOscuro,
+            paper: Colours.Negro,
           },
 
           text: {

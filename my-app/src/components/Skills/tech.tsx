@@ -12,8 +12,8 @@ const TechSkills = () => {
       xs={12}
       style={{ height: "100%", width: "100vw" }}
       sx={{ py: { xs: 4, md: 14 } }}
-      borderTop={3}
-      borderBottom={3}
+      /*      borderTop={3}
+      borderBottom={3} */
       id="Skills"
     >
       <Grid
@@ -24,7 +24,7 @@ const TechSkills = () => {
         flexDirection="column"
         alignItems="center"
         justifyContent="center"
-        border={1}
+        /*    border={1} */
       >
         <Typography
           variant="h2"
@@ -43,7 +43,7 @@ const TechSkills = () => {
         md={7}
         display="flex"
         alignItems="center"
-        border={1}
+        /*     border={1} */
         height="100%"
       >
         <Box

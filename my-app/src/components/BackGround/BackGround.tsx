@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import { Background, myBackground } from "../../data/data";
 import Typography from "@mui/material/Typography";
 import BGCard from "./bgCard";
+import { Colours } from "../../Theme/theme";
 
 const BackgroundList = () => {
   return (
@@ -13,8 +14,9 @@ const BackgroundList = () => {
       xs={12}
       style={{ height: "100%", width: "100vw" }}
       sx={{ py: 4 }}
-      borderTop={3}
-      borderBottom={1}
+      bgcolor="paper"
+      /*      borderTop={3}
+      borderBottom={1} */
       id="Background"
     >
       <Grid
@@ -23,7 +25,7 @@ const BackgroundList = () => {
         display="flex"
         justifyContent="center"
         alignItems="center"
-        border={1}
+        /*   border={1} */
         sx={{ mt: { xs: 0, md: 6 }, mb: { xs: 4, md: 8 } }}
         py={2}
       >
@@ -35,10 +37,15 @@ const BackgroundList = () => {
               "2px 2px 0px rgba(255, 255, 255, 0.5), 4px 4px 2px rgba(0, 0, 0, 0.15)",
           }}
         >
-          Background
+          Formación
         </Typography>
       </Grid>
-      <Grid item xs={12} display="flex" justifyContent="center" border={1}>
+      <Grid
+        item
+        xs={12}
+        display="flex"
+        justifyContent="center" /* border={1} */
+      >
         <Box
           width="100%"
           display="flex"

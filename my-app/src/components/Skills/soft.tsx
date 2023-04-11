@@ -11,13 +11,12 @@ const SoftSkills = () => {
     <Grid
       container
       xs={12}
-      
       style={{ height: "100%", width: "100vw" }}
       sx={{ py: 4 }}
-      borderTop={3}
-      borderBottom={3}
+      /*       borderTop={3}
+      borderBottom={3} */
     >
-      <Grid item xs={12} md={7} width="100%" display="flex" border={1}>
+      <Grid item xs={12} md={7} width="100%" display="flex" /*  border={1} */>
         <Box
           display="flex"
           flexWrap="wrap"
@@ -37,7 +36,7 @@ const SoftSkills = () => {
         flexDirection="column"
         alignItems="center"
         justifyContent="center"
-        border={1}
+        /* border={1} */
       >
         <Typography
           variant="h2"

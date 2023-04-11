@@ -11,8 +11,8 @@ const ProyectsList = () => {
       container
       xs={12}
       style={{ height: "100%", width: "100vw" }}
-      borderTop={3}
-      borderBottom={3}
+      /*       borderTop={3}
+      borderBottom={3} */
       id="Proyects"
     >
       <Grid
