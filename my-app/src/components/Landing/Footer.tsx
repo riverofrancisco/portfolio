@@ -55,8 +55,8 @@ const Footer: React.FC = () => {
               mr: 2,
               display: { xs: "flex" },
               fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
+              fontWeight: { sm: 700 },
+              letterSpacing: { sm: ".3rem" },
               color: "inherit",
               textDecoration: "none",
             }}

@@ -55,7 +55,7 @@ const LandingPage: React.FC = () => {
                 display: { md: "flex" },
                 fontFamily: "monospace",
                 fontWeight: 900,
-                letterSpacing: ".3rem",
+                letterSpacing: { sm: ".3rem" },
                 color: "inherit",
                 textDecoration: "none",
               }}
