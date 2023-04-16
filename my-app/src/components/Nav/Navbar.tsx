@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -26,6 +26,16 @@ import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
 import { useAppDispatch, useAppSelector } from "../../hooks/hooksRedux";
 import { ModeSwitcher } from "../../redux/portfolio/actions";
 
+import LinearProgress from "@mui/material/LinearProgress";
+import { styled } from "@mui/material/styles";
+
+const StyledLinearProgress = styled(LinearProgress)(({ theme }) => ({
+  position: "fixed",
+
+  width: "100%",
+  zIndex: theme.zIndex.drawer + 1,
+}));
+
 const navItems = [
   "Inicio",
   "Habilidades",
@@ -35,6 +45,25 @@ const navItems = [
 ];
 
 export default function NavBar() {
+  //// PROGRESS BAR
+  const [scrollProgress, setScrollProgress] = React.useState(0);
+  const handleScroll = () => {
+    const scrollMax =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    const scrollTop =
+      window.scrollY ||
+      window.pageYOffset ||
+      document.documentElement.scrollTop;
+    const progress = (scrollTop / scrollMax) * 100;
+    setScrollProgress(progress);
+  };
+
+  React.useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   //// REDUX DARK/LIGHTMODE
   const dispatch = useAppDispatch();
   const currentMode = useAppSelector((state) => state.global.mode);
@@ -174,10 +203,13 @@ export default function NavBar() {
               ))}
             </Box>
             <Button
-              size="small"
               color="secondary"
               onClick={handleToggleDarkMode}
-              sx={{ display: "flex", justifySelf: "end" }}
+              sx={{
+                display: "flex",
+                justifySelf: "end",
+                /* boxShadow: { xs: 1, md: 0 }, */
+              }}
             >
               {isDarkMode ? <DarkModeRoundedIcon /> : <LightModeRoundedIcon />}
 
@@ -188,6 +220,11 @@ export default function NavBar() {
           </Toolbar>
         </AppBar>
       </Box>
+      <StyledLinearProgress
+        variant="determinate"
+        value={scrollProgress}
+        color="secondary"
+      />
     </Box>
   );
 }
