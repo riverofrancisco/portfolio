@@ -172,16 +172,13 @@ export default function NavBar() {
             >
               <MenuIcon />
             </IconButton>
-            <img width={30} src={LOGO} alt="logo" />
-            <Typography
-              variant="h6"
-              component="div"
-              color="white"
-              sx={{ flexGrow: 1, display: { xs: "none", md: "block" } }}
-            >
-              FR
-            </Typography>
+            <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+              <img width={30} src={LOGO} alt="logo" />
 
+              <Typography variant="h6" component="div" color="white">
+                FR
+              </Typography>
+            </Box>
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
               {navItems.map((item) => (
                 <Box
