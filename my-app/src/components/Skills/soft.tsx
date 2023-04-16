@@ -16,6 +16,29 @@ const SoftSkills = () => {
       /*       borderTop={3}
       borderBottom={3} */
     >
+      <Grid
+        item
+        xs={12}
+        sx={{ display: { xs: "flex", md: "none" } }}
+        alignItems="center"
+        justifyContent="center"
+        /* border={1} */
+      >
+        <Box mt={3}>
+          <Typography
+            fontWeight="bolder"
+            variant="h4"
+            align="center"
+            sx={{ py: 3, sm: ".2rem" }}
+            style={{
+              textShadow:
+                "2px 2px 0px rgba(255, 255, 255, 0.5), 4px 4px 2px rgba(0, 0, 0, 0.15)",
+            }}
+          >
+            Habilidades Blandas
+          </Typography>
+        </Box>
+      </Grid>
       <Grid item xs={12} md={7} width="100%" display="flex" /*  border={1} */>
         <Box
           display="flex"
@@ -32,7 +55,7 @@ const SoftSkills = () => {
         item
         xs={12}
         md={5}
-        display="flex"
+        sx={{ display: { xs: "none", md: "flex" } }}
         flexDirection="column"
         alignItems="center"
         justifyContent="center"
@@ -41,7 +64,9 @@ const SoftSkills = () => {
         <Box mt={3}>
           <Typography
             variant="h3"
+            align="center"
             fontWeight="bolder"
+            sx={{ letterSpacing: { sm: ".2rem" } }}
             style={{
               textShadow:
                 "2px 2px 0px rgba(255, 255, 255, 0.5), 4px 4px 2px rgba(0, 0, 0, 0.15)",

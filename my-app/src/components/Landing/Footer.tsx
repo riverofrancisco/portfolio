@@ -9,6 +9,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Stack from "@mui/material/Stack";
 import EmailIcon from "@mui/icons-material/Email";
 import { Colours } from "../../Theme/theme";
+import Paper from "@mui/material/Paper";
 
 const actions = [
   {
@@ -40,8 +41,7 @@ const Footer: React.FC = () => {
         display="flex"
         justifyContent="space-around"
         alignItems="center"
-        borderTop={0.5}
-        bgcolor={Colours.GrisOscuro}
+        bgcolor={Colours.Negro}
         color="white"
         py={4}
       >

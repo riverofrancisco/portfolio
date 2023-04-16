@@ -57,6 +57,7 @@ const LandingPage: React.FC = () => {
                 fontWeight: 900,
                 letterSpacing: { sm: ".3rem" },
                 color: "inherit",
+
                 textDecoration: "none",
               }}
             >

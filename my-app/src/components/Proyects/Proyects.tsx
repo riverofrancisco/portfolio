@@ -25,8 +25,9 @@ const ProyectsList = () => {
         py={2}
       >
         <Typography
-          variant="h2"
+          variant="h3"
           fontWeight="bolder"
+          sx={{ letterSpacing: { sm: ".2rem" } }}
           style={{
             textShadow:
               "2px 2px 0px rgba(255, 255, 255, 0.5), 4px 4px 2px rgba(0, 0, 0, 0.15)",

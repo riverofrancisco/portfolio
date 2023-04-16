@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Card from "./skillCard";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import { Skill, techSkills } from "../../data/data";
 import Typography from "@mui/material/Typography";
+import { Skeleton } from "@mui/material";
 
 const TechSkills = () => {
   return (
@@ -28,7 +29,10 @@ const TechSkills = () => {
       >
         <Typography
           variant="h3"
+          align="center"
           fontWeight="bolder"
+          py={3}
+          sx={{ letterSpacing: { sm: ".2rem" } }}
           style={{
             textShadow:
               "2px 2px 0px rgba(255, 255, 255, 0.5), 4px 4px 2px rgba(0, 0, 0, 0.15)",
