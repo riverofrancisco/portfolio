@@ -5,6 +5,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
+import LOGO from "./LOGO.png";
 
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
@@ -171,10 +172,11 @@ export default function NavBar() {
             >
               <MenuIcon />
             </IconButton>
-
+            <img width={30} src={LOGO} alt="logo" />
             <Typography
               variant="h6"
               component="div"
+              color="white"
               sx={{ flexGrow: 1, display: { xs: "none", md: "block" } }}
             >
               FR
