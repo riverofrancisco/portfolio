@@ -10,7 +10,7 @@ interface InitialState {
 const initialState: InitialState = {
 value: 0,
 status: "ok",
-mode: "light"
+mode: "dark"
 }
 
 export const global = createSlice({

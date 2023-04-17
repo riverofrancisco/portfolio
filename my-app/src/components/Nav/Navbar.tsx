@@ -210,7 +210,7 @@ export default function NavBar() {
                 /* boxShadow: { xs: 1, md: 0 }, */
               }}
             >
-              {isDarkMode ? <DarkModeRoundedIcon /> : <LightModeRoundedIcon />}
+              {isDarkMode ? <LightModeRoundedIcon /> : <DarkModeRoundedIcon />}
 
               {/* <Typography ml={1} color="primary" variant="button">
                 {isDarkMode ? "Light Mode" : "Dark Mode"}
