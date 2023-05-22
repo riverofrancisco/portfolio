@@ -10,7 +10,7 @@ import NODElogo from './Images/NODE.png'
 import EXlogo from './Images/Express.png'
 
 
-export const ProfileIMG: string = "https://media.licdn.com/dms/image/D4D03AQHsxi0b5XhyqA/profile-displayphoto-shrink_400_400/0/1678410505495?e=1684368000&v=beta&t=VOCGfREECuNDntEVO-w7RENHjPs45AuhpeMfznOZKtE";
+export const ProfileIMG: string = "https://media.licdn.com/dms/image/D4D03AQHsxi0b5XhyqA/profile-displayphoto-shrink_400_400/0/1678410505495?e=1690416000&v=beta&t=sn788l9IsXIQv1BLX1Gw1AQU6NgczE8cT8igHGjhNTM";
 
 export interface Skill {
     name: string,
