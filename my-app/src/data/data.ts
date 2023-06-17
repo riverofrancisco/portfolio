@@ -159,7 +159,7 @@ export const techSkills: Skill[] = [{
       period: "dic. 2022",
       image: PIH,
       link: "https://food-individualproyect.vercel.app/",
-      video: "https://www.youtube.com",
+      video: "https://www.youtube.com/watch?v=Du9Dp3LO-Vk",
       description: "Aplicación que muestra, filtra, busca y ordena un catalogo de recetas. Para el desarrollo de la misma utilicé las tecnologías de Javascript, React, Redux, HTML y CSS puro para el front-end y la UI; y Node, Express, Sequelize y PostgreSQL para el back-end y base de datos.",
     }
   
