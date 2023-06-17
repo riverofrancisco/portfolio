@@ -1,4 +1,5 @@
 import DevsL from './Images/DevsLearningLanding.png'
+import PIH from './Images/PIHome.png'
 import JSlogo from './Images/JavaScript.png'
 import TSlogo from './Images/Typescript.png'
 import REACTlogo from './Images/React.png'
@@ -152,6 +153,14 @@ export const techSkills: Skill[] = [{
       link: "https://devs-learning-5hal.vercel.app/",
       video: "https://www.youtube.com/watch?v=ZU7n8LiP5OE&t=201s",
       description: "Junto con 7 compañeros, aplicando la metodología ágil de SCRUM, desarrollamos la plataforma responsive de venta de cursos online Devs Learning. Para el mismo utilizamos tecnologías como Typescript, React, Redux Toolkits, Material UI, PostgreSQL, Sequelize, Node, Express, Firebase, Checkbox Mercadopago, entre otras.",
+    },
+    {
+      name: "Food App",
+      period: "dic. 2022",
+      image: PIH,
+      link: "https://food-individualproyect.vercel.app/",
+      video: "https://www.youtube.com",
+      description: "Aplicación que muestra, filtra, busca y ordena un catalogo de recetas. Para el desarrollo de la misma utilicé las tecnologías de Javascript, React, Redux, HTML y CSS puro para el front-end y la UI; y Node, Express, Sequelize y PostgreSQL para el back-end y base de datos.",
     }
   
   ]

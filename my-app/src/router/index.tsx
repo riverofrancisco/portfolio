@@ -15,9 +15,9 @@ export const AppRouter = () => {
     <div>
       <NavBar />
       <LandingPage />
+      <ProyectsList />
       <TechSkills />
       <SoftSkills />
-      <ProyectsList />
       <BackgroundList />
       <ContactForm />
       <Footer />

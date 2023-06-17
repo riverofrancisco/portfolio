@@ -36,7 +36,10 @@ const ProyectCard = ({ proyect }: Props) => {
       container
       display="flex"
       justifyContent="center"
-      sx={{ width: { xs: "90%", sm: "47%", md: "40%" } }}
+      sx={{
+        width: { xs: "95%", sm: "47%", md: "40%" },
+        mb: { xs: 5, sm: 0 },
+      }}
     >
       <Grid
         item
@@ -84,7 +87,13 @@ const ProyectCard = ({ proyect }: Props) => {
         </Box>
 
         <Fade in={!show} timeout={1000}>
-          <Grid item sx={{ borderTop: show ? 0 : 1, py: 2 }}>
+          <Grid
+            item
+            sx={{
+              borderTop: show ? 0 : 1,
+              py: 2,
+            }}
+          >
             {" "}
             <Box>
               <Typography variant="body2">{proyect.description}</Typography>

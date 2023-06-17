@@ -45,10 +45,10 @@ const ProyectsList = () => {
         py={4}
       >
         <Box
-          width="100%"
+          width="90%"
           display="flex"
           flexWrap="wrap"
-          justifyContent="center"
+          justifyContent="space-around"
         >
           {Proyects.map((p: Proyect) => {
             return <ProyectCard key={p.name} proyect={p} />;

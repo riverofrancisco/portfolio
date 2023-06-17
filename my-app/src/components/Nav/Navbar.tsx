@@ -39,8 +39,8 @@ const StyledLinearProgress = styled(LinearProgress)(({ theme }) => ({
 
 const navItems = [
   "Inicio",
-  "Habilidades",
   "Proyectos",
+  "Habilidades",
   "Formacion",
   "Contacto",
 ];
