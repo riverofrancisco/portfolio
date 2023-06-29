@@ -134,6 +134,13 @@ export const techSkills: Skill[] = [{
          description: "1° año aprobado | promedio 6.86/10",
          link: "https://exactas.uba.ar/"
         },  
+    {    institution: "Centro Universitario de Idiomas",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3b6TmK31Nyrn7nvbDRMEV5nlqqyN4qVAjgKa24z_rSueuUVfLCbf_SO6rLIcMaDziCH4&usqp=CAU",
+        degree: "Inglés", 
+        timePeriod: "desde 2019",
+        description: "Nivel equivalente a C1 (MCER)",
+        link: "https://cui.edu.ar/"
+       },  
   ]
 
   export interface Proyect {
