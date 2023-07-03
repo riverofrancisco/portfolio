@@ -29,6 +29,7 @@ import { ModeSwitcher } from "../../redux/portfolio/actions";
 
 import LinearProgress from "@mui/material/LinearProgress";
 import { styled } from "@mui/material/styles";
+import { navItems } from "../../data/data";
 
 const StyledLinearProgress = styled(LinearProgress)(({ theme }) => ({
   position: "fixed",
@@ -37,13 +38,6 @@ const StyledLinearProgress = styled(LinearProgress)(({ theme }) => ({
   zIndex: theme.zIndex.drawer + 1,
 }));
 
-const navItems = [
-  "Inicio",
-  "Proyectos",
-  "Habilidades",
-  "Formacion",
-  "Contacto",
-];
 
 export default function NavBar() {
   //// PROGRESS BAR

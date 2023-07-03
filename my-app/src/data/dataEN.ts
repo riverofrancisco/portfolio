@@ -10,6 +10,14 @@ import HTMLlogo from './Images/HTML.png'
 import NODElogo from './Images/NODE.png'
 import EXlogo from './Images/Express.png'
 
+export const navItems = [
+  "Home",
+  "Proyects",
+  "Skills",
+  "Background",
+  "Contact",
+];
+
 
 export const ProfileIMG: string = "https://media.licdn.com/dms/image/D4D03AQHsxi0b5XhyqA/profile-displayphoto-shrink_400_400/0/1678410505495?e=1690416000&v=beta&t=sn788l9IsXIQv1BLX1Gw1AQU6NgczE8cT8igHGjhNTM";
 
@@ -67,7 +75,7 @@ export const techSkills: Skill[] = [{
           image: "https://cdn4.iconfinder.com/data/icons/softskill-flat/64/softskills-07-512.png"
         },
         {
-          name: "Goal Achievemment",
+          name: "Goal Achievement",
           image: "https://cdn4.iconfinder.com/data/icons/softskill-flat/64/softskills-06-512.png"
         },
         {
@@ -159,7 +167,7 @@ export const techSkills: Skill[] = [{
       image: DevsL,
       link: "https://devs-learning-5hal.vercel.app/",
       video: "https://www.youtube.com/watch?v=ZU7n8LiP5OE&t=201s",
-      description: "Junto con 7 compañeros, aplicando la metodología ágil de SCRUM, desarrollamos la plataforma responsive de venta de cursos online Devs Learning. Para el mismo utilizamos tecnologías como Typescript, React, Redux Toolkits, Material UI, PostgreSQL, Sequelize, Node, Express, Firebase, Checkbox Mercadopago, entre otras.",
+      description: 'In a group of 7 colleagues, applying the agile methodology SCRUM, we developed a responsive platform for selling online courses which we called "Devs Learning". For it we use technologies such as Typescript, React, Redux Toolkits, Material UI, PostgreSQL, Sequelize, Node, Express, Firebase, Checkbox Mercadopago, among others.',
     },
     {
       name: "Food App",
@@ -167,7 +175,7 @@ export const techSkills: Skill[] = [{
       image: PIH,
       link: "https://food-individualproyect.vercel.app/",
       video: "https://www.youtube.com/watch?v=Du9Dp3LO-Vk",
-      description: "Aplicación que muestra, filtra, busca y ordena un catalogo de recetas. Para el desarrollo de la misma utilicé las tecnologías de Javascript, React, Redux, HTML y CSS puro para el front-end y la UI; y Node, Express, Sequelize y PostgreSQL para el back-end y base de datos.",
+      description: "Application that shows, filters, searches and orders a catalog of recipes. I used Javascript, React, Redux, HTML and CSS for the front-end; and Node, Express, Sequelize and PostgreSQL for the back-end and database..",
     }
   
   ]
