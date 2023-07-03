@@ -10,7 +10,9 @@ export enum Colours {
   GrisMedio = '#7E7E7E',
   GrisClaro = '#CFCFCF',
   BlancoGrisaceo = '#F2F2F2',
-  Negro = '#000000'
+  Negro = '#000000',
+  BoxLight = '#FFA000', // Color de la Box en tema claro
+  BoxDark = '#E91E63',
 }
 
 
@@ -31,6 +33,9 @@ export const getDesignTokens = (mode: PaletteMode) => ({
             default: Colours.BlancoGrisaceo,
                      
           },
+          box: {
+            main: Colours.BoxLight,
+          },
         }
       : {
           // palette values for dark mode
@@ -40,6 +45,9 @@ export const getDesignTokens = (mode: PaletteMode) => ({
           background: {
             default: Colours.GrisOscuro,
             paper: Colours.Negro,
+          },
+          box: {
+            main: Colours.BoxDark,
           },
 
           text: {

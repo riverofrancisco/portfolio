@@ -3,12 +3,14 @@ import { Box } from "@mui/system";
 import { Button, Typography } from "@mui/material";
 import { Background } from "../../data/data";
 import Grid from "@mui/material/Grid";
+import { useTheme } from "@emotion/react";
 
 interface Props {
   background: Background;
 }
 
 const BGCard = ({ background }: Props) => {
+  const theme = useTheme();
   const handleLink = (link: string) => {
     if (link) window.open(link, "_blank");
   };

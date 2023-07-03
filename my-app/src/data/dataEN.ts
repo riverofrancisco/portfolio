@@ -63,31 +63,31 @@ export const techSkills: Skill[] = [{
 
   export const softSkills : Skill[] = [
         {
-          name: "Proactividad",
+          name: "Proactive",
           image: "https://cdn4.iconfinder.com/data/icons/softskill-flat/64/softskills-07-512.png"
         },
         {
-          name: "Orientación a objetivos",
+          name: "Goal Achievemment",
           image: "https://cdn4.iconfinder.com/data/icons/softskill-flat/64/softskills-06-512.png"
         },
         {
-          name: "Planificación",
+          name: "Planning",
           image: "https://cdn4.iconfinder.com/data/icons/softskill-flat/64/softskills-05-512.png"
         },
         {
-          name: "Empatía",
+          name: "Empathy",
           image: "https://cdn4.iconfinder.com/data/icons/softskill-flat/64/softskills-04-512.png"
         },
         {
-          name: "Hablar en público",
+          name: "Public speaking",
           image: "https://cdn4.iconfinder.com/data/icons/softskill-flat/64/softskills-03-512.png"
         },
         {
-          name: "Trabajo en Equipo",
+          name: "Team player",
           image: "https://cdn4.iconfinder.com/data/icons/softskill-flat/64/softskills-02-512.png"
         },
         {
-          name: "Liderazgo",
+          name: "Leadership",
           image: "https://cdn4.iconfinder.com/data/icons/softskill-flat/64/softskills-01-512.png"
         }
        
@@ -123,22 +123,22 @@ export const techSkills: Skill[] = [{
     {    institution: "Henry Bootcamp",
          image: "https://www.soyhenry.com/_next/image?url=https%3A%2F%2Fassets.soyhenry.com%2Fhenry-landing%2Fassets%2FHenry%2Flogo-white.png&w=128&q=75",
          degree: "FullStack Developer", 
-         timePeriod: "ago 2022 - mar 2023",
-         description: `Experiencia en: ${aptitudesHenry.join(' | ')}.`,
+         timePeriod: "aug 2022 - mar 2023",
+         description: `Experience in: ${aptitudesHenry.join(' | ')}.`,
          link: "https://www.soyhenry.com/"
         },
-    {    institution: "Universidad de Buenos Aires",
+    {    institution: "University of Buenos Aires",
          image: "https://exactas.uba.ar/wp-content/uploads/2022/08/logo-2022.png",
-         degree: "Licenciatura en Ciencias Físicas", 
-         timePeriod: "ago 2020 - jul 2022",
-         description: "1° año aprobado | promedio 6.86/10",
+         degree: "Degree in Physics", 
+         timePeriod: "aug 2020 - jul 2022",
+         description: "1st year approved. Average mark 6,86/10.",
          link: "https://exactas.uba.ar/"
         },  
-    {    institution: "Centro Universitario de Idiomas",
+    {    institution: "University Language Center",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3b6TmK31Nyrn7nvbDRMEV5nlqqyN4qVAjgKa24z_rSueuUVfLCbf_SO6rLIcMaDziCH4&usqp=CAU",
-        degree: "Inglés", 
-        timePeriod: "desde 2019",
-        description: "Nivel equivalente a C1 (MCER)",
+        degree: "English", 
+        timePeriod: "since 2019",
+        description: "Level Equivalent to C1.",
         link: "https://cui.edu.ar/"
        },  
   ]
@@ -155,7 +155,7 @@ export const techSkills: Skill[] = [{
   export const Proyects : Proyect[] = [
     {
       name: "Devs Learning",
-      period: "ene. 2023 - mar. 2023",
+      period: "jan. 2023 - mar. 2023",
       image: DevsL,
       link: "https://devs-learning-5hal.vercel.app/",
       video: "https://www.youtube.com/watch?v=ZU7n8LiP5OE&t=201s",
@@ -163,7 +163,7 @@ export const techSkills: Skill[] = [{
     },
     {
       name: "Food App",
-      period: "dic. 2022",
+      period: "dec. 2022",
       image: PIH,
       link: "https://food-individualproyect.vercel.app/",
       video: "https://www.youtube.com/watch?v=Du9Dp3LO-Vk",
